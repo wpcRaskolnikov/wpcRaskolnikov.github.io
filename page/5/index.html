@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="The commonest thing is delightful if only one hides it.">
@@ -125,17 +125,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">0</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">10</span></a>
 
   </li>
   </ul>
@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/20/Docker%20%E6%95%99%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/12/20/Docker%20%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">Docker 教程</a>
+            <a href="/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">JavaFx 教程</a>
         </h2>
 
         <div class="post-meta">
@@ -189,14 +189,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-12-20 17:16:45" itemprop="dateCreated datePublished" datetime="2021-12-20T17:16:45+08:00">2021-12-20</time>
+              <time title="Created: 2021-11-20 00:00:00" itemprop="dateCreated datePublished" datetime="2021-11-20T00:00:00+08:00">2021-11-20</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-11-06 18:03:16" itemprop="dateModified" datetime="2021-11-06T18:03:16+08:00">2021-11-06</time>
+                <time title="Modified: 2021-12-20 17:29:23" itemprop="dateModified" datetime="2021-12-20T17:29:23+08:00">2021-12-20</time>
               </span>
 
           
@@ -210,15 +210,770 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="安装">安装</h2>
-<p>环境：Ubuntu20.04</p>
+          <h2 id="开始">开始</h2>
+<ol type="1">
+<li>编译命令</li>
+</ol>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac <span class="params">--module-path</span> lib文件路径 <span class="params">--add-modules</span> javafx.controls 文件名<span class="string">.java</span></span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>运行命令</li>
+</ol>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">java </span>--module-path lib文件路径 --<span class="keyword">add-modules </span><span class="keyword">javafx.controls </span>文件名</span><br></pre></td></tr></table></figure>
+<h2 id="基础">基础</h2>
+<p><img src="/pic/JavaFx教程/JavaFx教程1.png" /></p>
 <ul>
-<li><p>安装包，允许 apt 命令 HTTPS 访问 Docker 源 <figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> apt install apt-trans<span class="keyword">port</span>-https ca-certificates curl gnupg-agent software-properties-common</span><br></pre></td></tr></table></figure></p></li>
-<li><p>添加官方 GPS key <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https:<span class="regexp">//</span>download.docker.com<span class="regexp">/linux/u</span>buntu/gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure></p></li>
-<li><p>将 Docker 源添加到 /etc/apt/sources.list <figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="built_in"> add-apt-repository </span><span class="string">&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;</span></span><br></pre></td></tr></table></figure></p></li>
-<li><p>安装 Docker <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo apt update</span> </span><br></pre></td></tr></table></figure></p></li>
+<li>主类是 javafx.application.Application 的子类</li>
+<li>Stage.show()</li>
+<li>防止改变 Stage 大小：stage.setResizable(false)</li>
+<li>Scene(Parent, width, height) 或 Scene(Parent) 构造Scene</li>
+<li>Scene 不能包含 Node，Pane 和 Group 可以包含Node</li>
+<li>属性绑定：单向用 bind，双向用 bindBidirectional</li>
+<li>抽象类 IntegerProperty，其实例 SimpleIntegerProperty</li>
+<li>Node 样式：styleName:value，styleName 以 -fx- 做前缀</li>
+<li>面板和 UI 组件对象可以转换和缩放，但组、形状和文本对象不能修改大小</li>
+<li>不能将 ImageView 或 TextField 多次放入一个 Pane 或 Stage</li>
 </ul>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> docker-ce</span><br></pre></td></tr></table></figure>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>+Point2D(x: double, y: double)<br />+distance(x: doubel, y: double): double<br />+distance(p: Point2D): double<br />+getX(): double<br />+getY(): double<br />+midpoint(p: Point2D): Point2D<br />+toString(): String</td>
+<td>用给定的 x,y 创建对象<br />返回该点到定点(x, y)的距离<br />返回该点到 p 的距离<br />返回该点的 x 坐标<br />返回该点的 y 坐标<br />返回该点和 p 的中间点<br />返回该点的字符串表示</td>
+</tr>
+</tbody>
+</table>
+<h2 id="字体">字体</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-red: double<br />-green: double<br />-blue: double<br />-opacity: double</td>
+<td>-size: double<br />-name: String<br />-family: String</td>
+</tr>
+<tr class="even">
+<td>+Color(r: double, g: double, b: double, opacity: double)<br />+brighter(): Color<br />+darker(): Color<br /><u>+color(r: double, g: double, b: double): Color</u><br /><u>+color(r: double, g: double, b: double, opacity: double)</u>: Color<br /><u>+rgb(r: int, g: int, b: int): Color</u><br /><u>+rgb(r: int, g: int, b: int, opacity: int): Color</u><br /></td>
+<td>+Font(size: double)<br />+Font(name: String, size: double)<br /><u>+font(name: String, size: double)</u><br /><u>+font(name: String, w: FontWeight, size: double)</u><br /><u>+font(name: String, w: FontWeight, p: FontPosture, size: double,)</u><br /><u>+getFontNames(): List<String></u></td>
+</tr>
+</tbody>
+</table>
+<p>Color, Font 类是不可修改的，FontPosture：FontPosture.ITALIC, FontPosture.REGULAR</p>
+<h2 id="图像">图像</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-error: ReadOnlyBooleanProperty<br />-height: ReadOnlyDoubleProperty<br />-width: ReadOnlyDoubleProperty<br />-progress: ReadOnlyDoubleProperty</td>
+<td>表明图像是否正确载入<br />高度<br />宽度<br />图像载入百分比</td>
+</tr>
+<tr class="even">
+<td>+Image(filenameOrURL: String)</td>
+<td>创建一个从文件或 URL 载入的 Image</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-fitHeight: DoubleProperty<br />-fitWidth: DoubleProperty<br />-x: DoubleProperty<br />-y: DoubleProperty<br />-image: ObjectProperty<Image></td>
+<td>图像改变大小来适应边框高度<br />图像改变大小来适应边框宽度<br />对象原点 x 坐标<br />对象原点 y 坐标</td>
+</tr>
+<tr class="even">
+<td>+ImageView()<br />+ImageView(image: Image)<br />+ImageView(filenameOrURL: String)</td>
+<td>创建对象<br />用给定 Image 创建对象<br />创建一个从文件或 URL 载入的对象</td>
+</tr>
+</tbody>
+</table>
+<h2 id="面板和组">面板和组</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">类</th>
+<th style="text-align: center;">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Pane</td>
+<td style="text-align: center;">面板的基类，getChildren() 返回面板中的 Node 列表</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">StackPane</td>
+<td style="text-align: center;">Node 放置在面板中央，并且叠加</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">FlowPane</td>
+<td style="text-align: center;">Node 水平放置或垂直放置</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">GridPane</td>
+<td style="text-align: center;">Node 放置在二维网格中</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">BorderPane</td>
+<td style="text-align: center;">Node 放在顶部，底部，右边，左边以及中间区域</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">HBox</td>
+<td style="text-align: center;">单行放置</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">VBox</td>
+<td style="text-align: center;">单列放置</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flowpane-和-borderpane">FlowPane 和 BorderPane</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-alignment: ObjectProperty&lt;Pos&gt;<br />-orientaion: ObjectProPerty&lt;Orientation&gt;<br />-hgap: DoubleProperty<br />-vgap: DoubleProperty</td>
+<td>-top: ObjectProperty&lt;Node&gt;<br />-right: ObjectProperty&lt;Node&gt;<br />-bottom: ObjectProperty&lt;Node&gt;<br />-left: ObjectProperty&lt;Node&gt;<br />-center: ObjectProperty&lt;Node&gt;</td>
+</tr>
+<tr class="even">
+<td>+FlowPane()<br />+FlowPane(hgape: double, vgap: double)<br />+FlowPane(orientation: ObjectProPerty&lt;Orientation&gt;)<br />+FlowPane(orientation: ObjectProPerty&lt;Orientation&gt;, hgape: double, vgap: double)</td>
+<td>+BorderPane()<br />+BorderPane(node: Node)<br /><u>+setAllignment(child: Node, pos: Pos)</u></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>alignment 表示对齐方式，默认 Pos.LEFT</p></li>
+<li><p>orientation 表示面板方向，默认 Orientation.HORIZONTAL</p></li>
+<li><p>hgap 表示水平间距，默认0</p></li>
+</ul>
+<h3 id="gridpane">GridPane</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-alignment: ObjectProperty&lt;Pos&gt;<br />-gridLinesVisible: BooleanProPerty<br />-hgap: DoubleProperty<br />-vgap: DoubleProperty</td>
+<td>对齐方式<br />网格线是否可见，默认 false<br />水平间距<br />垂直间距</td>
+</tr>
+<tr class="even">
+<td>+GridPane()<br />+add(child: Node, columnIdex: int, rowIndex: int): void<br />+addColumn(collumnIndex: int, children: Node...): void<br />+addRow(rowIndex: int, children: Node...): void<br /><u>+getColumnIndex(child: Node): int</u><br /><u>+setColumnIndex(child: Node, columnIndex: int): void</u><br /><u>+getRowIndex(child: Node): int</u><br /><u>+setRowIndex(child: Node, rowIndex: int): void</u><br /><u>+setHalighnment(child: Node, value: HPos): void</u><br /><u>+setValighnment(child: Node, value: VPos): void</u></td>
+<td>创建对象<br />添加一个结点到指定的列和行<br />添加多个结点到指定的列<br />添加多个结点到指定的行<br />返回结点的列下标<br />设置结点的列下标<br />返回结点的行下标<br />设置结点的行下标<br />为结点设置水平对齐<br />为结点设置垂直对齐</td>
+</tr>
+</tbody>
+</table>
+<p>setPrefWidth() 和 setPreHeight() 设置一个大的值，这样网格面板变大时，内容会自动扩充</p>
+<h3 id="hbox-和vbox">HBox 和VBox</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-alignment: ObjectProperty&lt;Pos&gt;<br />-fillHeight: BooleanProperty<br />-spacing: DoubleProperty</td>
+<td>-alignment: ObjectProperty&lt;Pos&gt;<br />-fillWidth: BooleanProperty<br />-spacing: DoubleProperty</td>
+</tr>
+<tr class="even">
+<td>+HBox()<br />+HBox(spacing: double)<br /><u>+setMargin(node: Node, value: Insets): void</u></td>
+<td>+VBox()<br />+VBox(spacing: double)<br /><u>+setMargin(node: Node, value: Insets): void</u></td>
+</tr>
+</tbody>
+</table>
+<h2 id="形状">形状</h2>
+<p><img src="/pic/JavaFx教程/JavaFx教程2.png" /></p>
+<ul>
+<li>fill 属性指定形状内部颜色</li>
+<li>Stroke 属性指定轮廓颜色</li>
+<li>strokeWidth 属性指定轮廓宽度</li>
+</ul>
+<h3 id="text-和-line">Text 和 Line</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-text: StringProperty<br />-x: DoubleProperty<br />-y: DoubleProperty<br />-underline: BooleanProperty<br />-strikethrough: BooleanProperty<br />-font: ObjectProperty<Font></td>
+<td>-startX: DoubleProperty<br />-startY: DoubleProperty<br />-endX: DoubleProperty<br />-endX: DoubleProperty</td>
+</tr>
+<tr class="even">
+<td>+Text()<br />+Text(text: String)<br />+Text(x: double, y: double, text: String)</td>
+<td>+Line()<br />+Line(startX: double, startY: double, endX: double, endY: double)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rectangle-和-circle">Rectangle 和 Circle</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-x: DoubleProperty<br />-y: DoubleProperty<br />-width: DoubleProperty<br />-heigth: DoubleProperty<br />-arcWidth: DoubleProperty<br />-arcHeigth: DoubleProperty</td>
+<td>-centerX: DoubleProperty<br />-centerY: DoubleProperty<br />-radius: DoubleProperty</td>
+</tr>
+<tr class="even">
+<td>+Rectangle()<br />+Rectangle(x: double, y: double, width: double, height: double)</td>
+<td>+Circle()<br />+Circle(x: double, y: double)<br />+Circle(x: double, y: double, radius: double)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ellipse-和-arc">Ellipse 和 Arc</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-centerX: DoubleProperty<br />-centerY: DoubleProperty<br />-radiusX: DoubleProperty<br />-radiusY: DoubleProperty</td>
+<td>-centerX: DoubleProperty<br />-centerY: DoubleProperty<br />-radiusX: DoubleProperty<br />-radiusY: DoubleProperty<br />-startAngle: DoubleProperty<br />-length: DoubleProperty<br />-type: ObjectProperty&lt;ArcType&gt;</td>
+</tr>
+<tr class="even">
+<td>+Ellipse()<br />+Ellipse(x: double, y: double)<br />+Ellipse(x: double, y: double, radiusX: double, radiusY: double)</td>
+<td>+Arc()<br />+Arc(x: double, y: double, radiusX: double, radiusY: double, startAngle: double, length: double)</td>
+</tr>
+</tbody>
+</table>
+<p>type：弧的闭合类型，有 ArcType.OPEN, ArcType.CHORD, ArcType.ROUND</p>
+<h3 id="polygon-和-polyline">Polygon 和 Polyline</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>+Polygon()<br />+Polygon(double...points)<br />+getPoints(): ObvervableList<Double></td>
+</tr>
+</tbody>
+</table>
+<h2 id="事件">事件</h2>
+<p><img src="/pic/JavaFx教程/JavaFx教程3.png" /></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">动作</th>
+<th style="text-align: center;">源对象</th>
+<th style="text-align: center;">事件类型</th>
+<th style="text-align: center;">注册方法</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">单击按钮</td>
+<td style="text-align: center;">Button</td>
+<td style="text-align: center;">ActionEvent</td>
+<td style="text-align: center;">setOnAction(EventHandler&lt;ActionEvent&gt;)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">回车</td>
+<td style="text-align: center;">TextField</td>
+<td style="text-align: center;">ActionEvent</td>
+<td style="text-align: center;">setOnAction(EventHandler&lt;ActionEvent&gt;)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">勾选或取消勾选</td>
+<td style="text-align: center;">RadioButton</td>
+<td style="text-align: center;">ActionEvent</td>
+<td style="text-align: center;">setOnAction(EventHandler&lt;ActionEvent&gt;)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">勾选或取消勾选</td>
+<td style="text-align: center;">CheckBox</td>
+<td style="text-align: center;">ActionEvent</td>
+<td style="text-align: center;">setOnAction(EventHandler&lt;ActionEvent&gt;)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">选择一个新的项</td>
+<td style="text-align: center;">ComboBox</td>
+<td style="text-align: center;">ActionEvent</td>
+<td style="text-align: center;">setOnAction(EventHandler&lt;ActionEvent&gt;)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">按下鼠标</td>
+<td style="text-align: center;">Node、Scene</td>
+<td style="text-align: center;">MouseEvent</td>
+<td style="text-align: center;">setOnMousePressed(EventHandler&lt;MouseEvent&gt;)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">释放鼠标</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnMouseReleased(EventHandler&lt;MouseEvent&gt;)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">单击鼠标</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnMouseClicked(EventHandler&lt;MouseEvent&gt;)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">鼠标进入</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnMouseEntered(EventHandler&lt;MouseEvent&gt;)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">鼠标退出</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnMouseExited(EventHandler&lt;MouseEvent&gt;)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">鼠标移动</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnMouseMoved(EventHandler&lt;MouseEvent&gt;)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">鼠标拖动</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnMouseDragged(EventHandler&lt;MouseEvent&gt;)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">按下键</td>
+<td style="text-align: center;">Node、Scene</td>
+<td style="text-align: center;">KeyEvent</td>
+<td style="text-align: center;">setOnKeyPressed(EventHandler&lt;keyEvent&gt;)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">释放键</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnKeyReleased(EventHandler&lt;keyEvent&gt;)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">敲击键</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">setOnKeyTyped(EventHandler&lt;keyEvent&gt;)</td>
+</tr>
+</tbody>
+</table>
+<p>处理器接口 EventHandler&lt;T extends Event&gt;，每个处理器都有 handle(T e) 方法处理事件</p>
+<p><img src="/pic/JavaFx教程/JavaFx教程4.png" /></p>
+<h3 id="鼠标事件">鼠标事件</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>+getButton(): MouseButton<br />+getClickCount(): int<br />+getX(): double<br />+getY(): double<br />+getSceneX(): double<br />+getSceneY(): double<br />+getScreenX(): double<br />+getScreenY(): double<br />+isAltDown(): boolean<br />+isControlDown(): boolean<br />+isMetaDown(): boolean<br />+isShiftDown(): boolean</td>
+<td>表明哪个鼠标被单击<br />返回事件中鼠标的单击次数<br />返回事件源结点中鼠标的 x 坐标<br />返回事件源结点中鼠标的 y 坐标<br />返回场景中鼠标点的 x 坐标<br />返回场景中鼠标点的 y 坐标<br />返回屏幕中鼠标点的 x 坐标<br />返回屏幕中鼠标点的 y 坐标<br />如果该事件中 Alt 键被按下，返回 true<br />如果该事件中 Control 键被按下，返回 true<br />如果该事件中 Meta 按钮被按下，返回 true<br />如果该事件中 Shift 键被按下，返回 true</td>
+</tr>
+</tbody>
+</table>
+<p>MouseButton 中有四个常数，分别是 PRIMARY、SECONDARY、MIDDLE 和 NONE，分别表示左键、右键、中键以及无键</p>
+<p>可以用 getButton()==MouseButton.SECONDARY 判断是否是右键被按下</p>
+<h3 id="键盘事件">键盘事件</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>+getCharacter(): String<br />+getCode(): keyCode<br />+getText(): String<br />+isAltDown(): boolean<br />+isControlDown(): boolean<br />+isMetaDown(): boolean<br />+isShiftDown(): boolean</td>
+<td>返回事件对应的字符，按下键或释放键返回空字符串<br />返回该事件中该键对应的编码，敲击键返回 UNDEFINED<br />返回描述键编码的字符串<br />如果 Alt 被按下，返回 true<br />如果 Control 被按下，返回 true<br />如果 Meta 被按下，返回 true<br />如果 Shift 被按下，返回 true</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keycode-枚举常量">keyCode 枚举常量</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">常量</th>
+<th style="text-align: center;">描述</th>
+<th style="text-align: center;">常量</th>
+<th style="text-align: center;">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">HOME</td>
+<td style="text-align: center;">Home 键</td>
+<td style="text-align: center;">DOWN</td>
+<td style="text-align: center;">下箭头键</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">END</td>
+<td style="text-align: center;">End 键</td>
+<td style="text-align: center;">LEFT</td>
+<td style="text-align: center;">左箭头键</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">PAGE_UP</td>
+<td style="text-align: center;">Page Up 键</td>
+<td style="text-align: center;">RIGHT</td>
+<td style="text-align: center;">右箭头键</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">PAGE_DOWN</td>
+<td style="text-align: center;">Page Down 键</td>
+<td style="text-align: center;">ESCAPE</td>
+<td style="text-align: center;">Esc 键</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">UP</td>
+<td style="text-align: center;">上箭头键</td>
+<td style="text-align: center;">TAB</td>
+<td style="text-align: center;">Tab 键</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">CONTROL</td>
+<td style="text-align: center;">Control 键</td>
+<td style="text-align: center;">ENTER</td>
+<td style="text-align: center;">Enter 键</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">SHIFT</td>
+<td style="text-align: center;">Shift 键</td>
+<td style="text-align: center;">UNDEFINED</td>
+<td style="text-align: center;">keyCode 未知</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">BACK_SPACE</td>
+<td style="text-align: center;">Backspace 键</td>
+<td style="text-align: center;">F1-F12</td>
+<td style="text-align: center;">从 F1 到 F12 的函数键</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">CAPS</td>
+<td style="text-align: center;">Caps Lock 键</td>
+<td style="text-align: center;">0-9</td>
+<td style="text-align: center;">从 0 到 9 的数字键</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">NUM_LOCK</td>
+<td style="text-align: center;">Num Lock 键</td>
+<td style="text-align: center;">A-Z</td>
+<td style="text-align: center;">从 A 到 Z 的字母键</td>
+</tr>
+</tbody>
+</table>
+<h3 id="可观察对象的监听器">可观察对象的监听器</h3>
+<h2 id="动画">动画</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-autoReverse: BooleanProperty<br />-cycleCount: IntegerProperty<br />-rate: DoubleProperty<br />-status: ReadOnlyObjectProperty&lt;Animation.Status&gt;</td>
+<td>定义了交替周期中动画是否需要倒转方向<br />定义了动画的循环次数，<br />定义了动画的速度和方向<br />只读属性，表明了动画的状态</td>
+</tr>
+<tr class="even">
+<td>+pase(): void<br />+play(): void<br />+stop(): void</td>
+<td>暂停动画<br />从当前位置开始播放<br />停止动画并重置动画</td>
+</tr>
+</tbody>
+</table>
+<p>Timeline.INDEFINITE 表明无限循环，status 定义了常量 PAUSE、RUNNING 和 STOPPED</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-duration(): ObjectProperty&lt;Duration&gt;<br />-node: ObjectProperty&lt;Node&gt;<br />-orientation: ObjectProperty&lt;PathTransition.OrientationType&gt;<br />-path: ObjectType&lt;Shape&gt;</td>
+<td>变换持续时间<br />变换目标结点<br />结点沿着路径的方向<br />一个结点移动路径的形状</td>
+</tr>
+<tr class="even">
+<td>+PathTransition()<br />+PathTransition(duration: Duration, path: Shape)<br />+PathTransition(duration: Duration, path: Shape, node: Node)</td>
+<td>创建对象<br />给定时间和路径创建对象<br />给定时间、路径和结点创建对象</td>
+</tr>
+</tbody>
+</table>
+<p>Duration 类定义了持续时间，不可更改，用 Duration(millis: double) 创建</p>
+<p>其中定义了常量 INDEFINTEONE、UNKNOW 和 ZERO分别代表了无限循环、1毫秒、未知以及0毫秒</p>
+<p>常量 NONE 和 ORTHOGONAL_TO_TANGET 在PathTransition.OrientationType 中定义，后者确定结点在沿着几何路径移动的时候是否和路径的切线保持垂直</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-duration: ObjectProperty&lt;Duration&gt;<br />-node: ObjectProperty&lt;Node&gt;<br />-fromValue: DoubleProperty<br />-toValue: DoubleProperty<br />-byValue: DoubleProperty</td>
+<td>变换的持续时间<br />变换的目标结点<br />该动画的起始透明度<br />该动画的结束透明度<br />该动画的透明度递增值</td>
+</tr>
+<tr class="even">
+<td>+pase(): void<br />+play(): void<br />+stop(): void</td>
+<td>创建对象<br />给定持续时间创建对象<br />该点持续时间和结点创建对象</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ui-组件">UI 组件</h2>
+<h3 id="labelbutton-和">Label、Button 和</h3>
+<p><img src="/pic/JavaFx教程/JavaFx教程5.png" /></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-alignment: ObjectProperty&lt;Pos&gt;<br />-contentDisplay: ObjectProperty&lt;ContentDisplay&gt;<br />-graphic: ObjectProperty&lt;Node&gt;<br />-graphicTextGap: DoubleProperty<br />-textFill: ObjectProperty<Paint><br />-text: String<br />-underline: BooleanProperty<br />-wrapText: BooleanProperty</td>
+<td>对齐方式<br />指定结点相对文本位置<br />标签中的图形<br />图形和文本之间的间隔<br />用于填充文本的图画<br />标签中的文本<br />文本是否有下划线<br />如果文本超过宽度，是否需要换行</td>
+</tr>
+</tbody>
+</table>
+<p>ContentDisplay 中常量 TOP、BOTTOM、LEFT、RIGHT 指定结点相对文本位置</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>-onAction: ObjectProperty&lt;EventHandler&lt;ActionEvent&gt;&gt;</td>
+<td>定义一个处理按钮动作的处理器</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>+Label()<br />+Label(text: String)<br />+Label(text: String, graphic: Mode)</td>
+<td>创建对象<br />用指定文本创建对象<br />用指定文本和图片创建对象</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 49%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>+Button()<br />+Button(text: String)<br />+Button(text: String, graphic: Node)</td>
+<td>创建对象<br />给定文本创建对象<br />给定文本和图片创建对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="checkbox-和-radiobutton">CheckBox 和 RadioButton</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>-selected: BooleanProperty</td>
+<td>标识一个复选框是否被选中</td>
+</tr>
+<tr class="even">
+<td>+CheckBox()<br />+CheckBox(text: String)</td>
+<td>创建对象<br />以指定文本创建对象</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-selected: BooleanProperty<br />-toggleGroup: ObjectProperty&lt;ToggleGroup&gt;</td>
+<td>标识按钮是否被选中<br />指定按钮所属组</td>
+</tr>
+<tr class="even">
+<td>+ToggleButton()<br />+ToggleButton(text: String)<br />+ToggleButton(text: String, graphic: Node)</td>
+<td>创建对象<br />以指定文本创建对象<br />以指定文本和图形创建对象</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr class="odd">
+<td>+RadioButton()<br />+RadioButton(text: String)</td>
+<td>创建对象<br />以指定文本创建对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="textfield-和-textarea">TextField 和 TextArea</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td>-text: StringProperty<br />-editable: BooleanProperty</td>
+<td>该组件的文本内容<br />表明文本是否可编辑</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-alignment: ObjectProperty&lt;Pos&gt;<br />-prefColumnCount: IntegerProperty<br />-onAction: ObjectProperty&lt;EventHandler&lt;ActionEvent&gt;&gt;</td>
+<td>对齐方式<br />指定文本域的首选列数<br />指定文本域上处理动作事件的处理器</td>
+</tr>
+<tr class="even">
+<td>+TextField()<br />+TextField(text: String)</td>
+<td>创建对象<br />以指定文本创建对象</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-prefColumnCount: IntegerProperty<br />-prefColumnCount: IntegerProperty<br />-wrapText: BooleanProperty</td>
+<td>指定文本域的首选列数<br />指定文本域的首选行数<br />指定文本是否要折到下一行</td>
+</tr>
+<tr class="even">
+<td>+TextArea()<br />+TextArea(text: String)</td>
+<td>创建对象<br />以指定文本创建对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="combobox">ComboBox</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-value: ObjectProperty<br />-editable: BooleanProperty<br />-onAction: ObjectProperty&lt;EventHandler&lt;ActionEvent&gt;&gt;</td>
+<td>在一个组合框中选择的值<br />指定组合框是否允许用户输入<br />指定处理动作事件的处理器</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-items: ObjectProperty&lt;ObservableList&lt;T&gt;&gt;<br />-visibleRowCount: IntegerProprety</td>
+<td>在组合框中弹出的部分选项<br />组合框弹出部分最多可以显示的行数</td>
+</tr>
+<tr class="even">
+<td>+ComboBox()<br />+ComboBox(items: observableList&lt;T&gt;)</td>
+<td>创建对象<br />以指定选项创建对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="listview">ListView</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-items: ObjectProperty&lt;ObservableList&lt;T&gt;&gt;<br />-orientation: BooleanProperty<br />-selectionModel: ObjectProperty&lt;MulitpleSelectionModel&lt;T&gt;&gt;</td>
+<td>列表视图中的选项<br />指明选项在列表视图中水平还是垂直显示<br />指明选项是如何被选定的</td>
+</tr>
+<tr class="even">
+<td>+ListView()<br />+ListView(items: observableList&lt;T&gt;)</td>
+<td>创建对象<br />以指定选项创建对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scrollbar-和-silder">ScrollBar 和 Silder</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-blockIncrement: DoubleProperty<br />-max: DoubleProperty<br />-min: DoubleProperty<br />-unitIncrement: DoubleProperty<br />-value: DoubleProperty<br />-visibleAmount: DoubleProperty<br />-oritntation: ObjectProperty&lt;Orientation&gt;</td>
+<td>单击滚动条的调节值（默认10）<br />滚动条代表的最大值（默认100）<br />滚动条代表的最小值（默认0）<br />方法调用时的调节值<br />滚动条的当前值（默认0）<br />滚动条宽度（默认15）<br />滚动条方向（默认 HORIZONTAL）</td>
+</tr>
+<tr class="even">
+<td>+ScrollBar()<br />+increment()<br />+decrement()</td>
+<td>创建对象<br />以 unitIncrement 增加滚动条的值<br />以 unitDecrement 减小滚动条的值</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-blockIncrement: DoubleProperty<br />-max: DoubleProperty<br />-min: DoubleProperty<br />-value: DoubleProperty<br />-oritntation: ObjectProperty&lt;Orientation&gt;<br />-majorTickUnit: DoubleProperty<br />-minorTickCount: DoubleProperty<br />-showTickLabels: BooleanProperty<br />-showTickMarks: BooleanPropery</td>
+<td>单击滚动条的调节值（默认10）<br />滚动条代表的最大值（默认100）<br />滚动条代表的最小值（默认0）<br />滚动条的当前值（默认0）<br />滚动条方向（默认 HORIZONTAL）<br />主刻度之间的单元距离<br />两主刻度之间放置的次刻度数<br />指定是否显示刻度标签<br />指定是否显示刻度</td>
+</tr>
+<tr class="even">
+<td>+Slider()<br />+Slider(min: double, max: double, value: double)</td>
+<td>创建默认水平滑动条<br />以初始值创建对象</td>
+</tr>
+</tbody>
+</table>
+<h2 id="媒体">媒体</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-duration: ReadOnlyObjectProperty&lt;Duration&gt;<br />-width: ReadOnlyIntegerProperty<br />-heigth: ReadOnlyIntegerProperty</td>
+<td>源媒体以秒计时的持续时间<br />源视频以像素为单位的宽度<br />源媒体以像素为单位的高度</td>
+</tr>
+<tr class="even">
+<td>+Media(source: String)</td>
+<td>从一个 URL 源创建对象</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-autoPlay: BooleanProperty<br />-currentCount: ReadOnlyIntegerProperty<br />-cycycleCount: IntegerProperty<br />-mute: BooleanProperty<br />-volume: DoubleProperty<br />-totalDuration: ReadOnlyObjectProperty&lt;Duration&gt;</td>
+<td>指定播放是否自动开始<br />已经完成的循环播放次数<br />指定媒体的播放次数<br />指定音频是否静音<br />音频的音量<br />从开始到结束播放媒体的持续时间</td>
+</tr>
+<tr class="even">
+<td>+MediaPlayer(media: Media)<br />+play(): void<br />+pause(): void<br />+seek(): void</td>
+<td>从媒体创建播放器<br />播放媒体<br />暂停媒体播放<br />将播放器定位到一个新的重新播放点</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>-x: DoubleProperty<br />-y: DoubleProperty<br />-mediaPlayer: ObjectProperty&lt;MediaPlayer&gt;<br />-fitWidth: DoubleProperty<br />-fitHeight: DoubleProperty<br /></td>
+<td>指定媒体视图当前的 x 坐标<br />指定媒体视图当前的 y 坐标<br />为媒体视图指定媒体播放器<br />为媒体指定视图宽度<br />为媒体指定视图高度</td>
+</tr>
+<tr class="even">
+<td>+MediaView()<br />+MediaView(mediaPlayer: mediaPlayer)</td>
+<td>创建对象<br />以指定媒体播放器创建媒体视图</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -237,7 +992,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -303,9 +1058,17 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
