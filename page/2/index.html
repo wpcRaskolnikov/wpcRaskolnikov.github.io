@@ -130,12 +130,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">10</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
 
   </li>
   </ul>
@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/20/vuetify/vuetify3/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/20/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/12/20/vuetify/vuetify3/" class="post-title-link" itemprop="url">vuetify3</a>
+            <a href="/2021/12/20/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">信息安全数学基础</a>
         </h2>
 
         <div class="post-meta">
@@ -190,16 +190,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-12-20 00:00:00 / Modified: 18:08:35" itemprop="dateCreated datePublished" datetime="2021-12-20T00:00:00+08:00">2021-12-20</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/vuetify/" itemprop="url" rel="index"><span itemprop="name">vuetify</span></a>
-                </span>
+              <time title="Created: 2021-12-20 20:21:46 / Modified: 20:23:48" itemprop="dateCreated datePublished" datetime="2021-12-20T20:21:46+08:00">2021-12-20</time>
             </span>
 
           
@@ -213,17 +204,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="树状图选择">树状图选择</h3>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;v-container&gt;</span><br><span class="line">    &lt;v-select v-model=&quot;selectionType&quot; :items=&quot;[&#x27;leaf&#x27;, &#x27;independent&#x27;]&quot; label=&quot;Selection type&quot;&gt;&lt;/v-select&gt;</span><br><span class="line">    &lt;v-row&gt;</span><br><span class="line">      &lt;v-col&gt;</span><br><span class="line">        &lt;v-treeview</span><br><span class="line">          v-model=&quot;selection&quot;</span><br><span class="line">          :items=&quot;items&quot;</span><br><span class="line">          :selection-type=&quot;selectionType&quot;</span><br><span class="line">          color=&quot;primary&quot;</span><br><span class="line">          shaped</span><br><span class="line">          dense</span><br><span class="line">          selectable</span><br><span class="line">          activatable</span><br><span class="line">          hoverable</span><br><span class="line">          return-object</span><br><span class="line">          open-all</span><br><span class="line">        &gt;&lt;/v-treeview&gt;</span><br><span class="line">      &lt;/v-col&gt;</span><br><span class="line">      &lt;v-divider vertical&gt;&lt;/v-divider&gt;</span><br><span class="line">    &lt;/v-row&gt;</span><br><span class="line">  &lt;/v-container&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &quot;HelloWorld&quot;,</span><br><span class="line">  data: () =&gt; (&#123;</span><br><span class="line">    selectionType: &quot;leaf&quot;,</span><br><span class="line">    selection: [],</span><br><span class="line">    items: [</span><br><span class="line">      &#123;</span><br><span class="line">        id: 1,</span><br><span class="line">        name: &quot;Root&quot;,</span><br><span class="line">        children: [</span><br><span class="line">          &#123; id: 2, name: &quot;Child 1&quot; &#125;,</span><br><span class="line">          &#123; id: 3, name: &quot;Child 2&quot; &#125;,</span><br><span class="line">          &#123;</span><br><span class="line">            id: 4,</span><br><span class="line">            name: &quot;Child 3&quot;,</span><br><span class="line">            children: [</span><br><span class="line">              &#123; id: 5, name: &quot;Grandchild 1&quot; &#125;,</span><br><span class="line">              &#123; id: 6, name: &quot;Grandchild 2&quot; &#125;,</span><br><span class="line">            ],</span><br><span class="line">          &#125;,</span><br><span class="line">        ],</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>说明：selection-type 控制树形视图如何选择节点。 有两种模式可用：‘leaf’ 和 ‘independent’。默认当我们选择父节点时，它将包括节点的叶子<code>leaf</code>，另一种类型是 ，它允许我们单独选择所有节点：<code>'independent</code>。selectable 将在每个节点旁边渲染一个复选框，以允许选择它们。 return-object 当 <code>true</code> 时，<code>v-model</code>、<code>active.sync</code> 和 <code>open.sync</code> 将返回完整的对象而不是只是键。activatable 可激活。hoverable 可悬停。我们有一个状态，其中包含一个项目数组。<code>items</code></p>
-<p>每个对象都具有 and 属性，其中包含要显示的节点 ID 和名称。<code>id``name</code></p>
-<p>该属性具有一个数组，其中包含具有相同属性的对象。<code>children</code></p>
-<p>然后我们把它传递给 的道具。<code>v-treeview</code> <code>item</code>我们可以使用道具使条目占用更少的空间：<code>dense</code> 。color 单击条目时显示背景色。</p>
-<p>shaped 角落将在右侧变圆，换成 rounded 则两侧都变圆。 item-disabled="locked" 用来禁用包含属性值 locked 且为 true 的结点。</p>
-<h3 id="时间轴">时间轴</h3>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;v-timeline align-top reverse dense&gt;</span><br><span class="line">    &lt;v-timeline-item fill-dot right small icon=&quot;&quot; color=&quot;&quot;&gt;</span><br><span class="line">      &lt;template v-slot:opposite&gt;</span><br><span class="line">        &lt;span&gt;Foo&lt;/span&gt;</span><br><span class="line">      &lt;/template&gt;</span><br><span class="line">      &lt;v-card&gt;</span><br><span class="line">        &lt;v-card-title&gt;</span><br><span class="line">          &lt;v-icon&gt;mdi-magnify&lt;/v-icon&gt;</span><br><span class="line">          &lt;h2&gt;Title 1&lt;/h2&gt;</span><br><span class="line">        &lt;/v-card-title&gt;</span><br><span class="line">        &lt;v-container&gt;</span><br><span class="line">          &lt;v-row&gt;</span><br><span class="line">            &lt;v-col&gt;Lorem ipsum dolor sit amet, no nam oblique veritus.&lt;/v-col&gt;</span><br><span class="line">          &lt;/v-row&gt;</span><br><span class="line">        &lt;/v-container&gt;</span><br><span class="line">      &lt;/v-card&gt;</span><br><span class="line">    &lt;/v-timeline-item&gt;</span><br><span class="line">  &lt;/v-timeline&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
-<p>说明：<code>align-top</code> 图标与卡片上对齐，<code>revese</code> 反转左右，<code>dense</code> 让卡片更密集。<code>fill-dot</code>使点被填充，没有白边框，right 和 left 控制卡片位置，icon 和 color 控制显示图标和颜色。<code>opposite</code> 插槽插入卡片对面。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;v-card class=&quot;mx-auto&quot; max-width=&quot;600&quot;&gt;</span><br><span class="line">    &lt;v-card-title class=&quot;blue-grey white--text&quot;&gt;</span><br><span class="line">      &lt;span class=&quot;title&quot;&gt;Logs&lt;/span&gt;</span><br><span class="line">    &lt;/v-card-title&gt;</span><br><span class="line">    &lt;v-card-text class=&quot;py-0&quot;&gt;</span><br><span class="line">      &lt;v-timeline dense&gt;</span><br><span class="line">        &lt;v-slide-x-reverse-transition group hide-on-leave&gt;</span><br><span class="line">          &lt;v-timeline-item v-for=&quot;item in items&quot; :key=&quot;item.id&quot; :color=&quot;item.color&quot; small fill-dot&gt;</span><br><span class="line">            &lt;v-alert</span><br><span class="line">              :value=&quot;true&quot;</span><br><span class="line">              :color=&quot;item.color&quot;</span><br><span class="line">              :icon=&quot;item.icon&quot;</span><br><span class="line">              class=&quot;white--text&quot;</span><br><span class="line">            &gt;Lorem ipsum dolor sit amet.&lt;/v-alert&gt;</span><br><span class="line">          &lt;/v-timeline-item&gt;</span><br><span class="line">        &lt;/v-slide-x-reverse-transition&gt;</span><br><span class="line">      &lt;/v-timeline&gt;</span><br><span class="line">    &lt;/v-card-text&gt;</span><br><span class="line">  &lt;/v-card&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &quot;HelloWorld&quot;,</span><br><span class="line">  data: () =&gt; (&#123;</span><br><span class="line">    items: [</span><br><span class="line">      &#123;</span><br><span class="line">        id: 1,</span><br><span class="line">        color: &quot;red lighten-2&quot;,</span><br><span class="line">        icon: &quot;mdi-star&quot;,</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        id: 2,</span><br><span class="line">        color: &quot;purple darken-1&quot;,</span><br><span class="line">        icon: &quot;mdi-book-variant&quot;,</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        id: 3,</span><br><span class="line">        color: &quot;green lighten-1&quot;,</span><br><span class="line">        icon: &quot;mdi-airballoon&quot;,</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+          <p>o</p>
 
       
     </div>
@@ -242,7 +223,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -308,13 +289,15 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categories</span>
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">1</span>
@@ -352,7 +335,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

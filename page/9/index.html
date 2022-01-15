@@ -130,12 +130,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">10</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
 
   </li>
   </ul>
@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/03/Typora%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">正则表达式</a>
+            <a href="/2021/11/03/Typora%20%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="post-title-link" itemprop="url">Typora 快捷键</a>
         </h2>
 
         <div class="post-meta">
@@ -189,14 +189,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-10-30 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-30T00:00:00+08:00">2021-10-30</time>
+              <time title="Created: 2021-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2021-11-03T00:00:00+08:00">2021-11-03</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-20 17:27:53" itemprop="dateModified" datetime="2021-12-20T17:27:53+08:00">2021-12-20</time>
+                <time title="Modified: 2021-12-20 17:30:00" itemprop="dateModified" datetime="2021-12-20T17:30:00+08:00">2021-12-20</time>
               </span>
 
           
@@ -210,159 +210,184 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="表达式">[]表达式</h2>
+          <h2 id="打开文件">打开文件</h2>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;">表达式</th>
-<th></th>
-<th></th>
+<th style="text-align: center;">操作</th>
+<th style="text-align: center;">快捷键</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">[ab]</td>
-<td>a 或者 b</td>
-<td>Java 匹配 J[abc]va</td>
+<td style="text-align: center;">打开文件</td>
+<td style="text-align: center;">Ctrl + O</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">[^ab]</td>
-<td>除了 a, b 以外的所有字符</td>
-<td>Java 不匹配 J[ ^a]va</td>
+<td style="text-align: center;">打开最近一个关闭的文件</td>
+<td style="text-align: center;">Ctrl + Shift + T</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">(ab|cd)</td>
-<td>ab 或者 cd</td>
-<td>Java 匹配 J(av|ac)a</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">[a-z]</td>
-<td>a 到 z</td>
-<td>Java 匹配 [A-M]a[a-z]a</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">[^a-z]</td>
-<td>除了 a 到 z 的字符</td>
-<td>Java 匹配 Jav[ ^b-d]</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">[a-e[m-p]]</td>
-<td>a 到 e 或 m 到 p</td>
-<td>Java 匹配 [A-G[I-M]]av[a-d]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">[a-e&amp;&amp;[m-p]]</td>
-<td>a 到 e 和 m 到 p</td>
-<td>Java 匹配 [A-P&amp;&amp;[I-M]]av[a-d]</td>
+<td style="text-align: center;">快速打开最近打开过的文件</td>
+<td style="text-align: center;">Ctrl + P</td>
 </tr>
 </tbody>
 </table>
-<h2 id="表达式-1">{}表达式</h2>
+<h2 id="选择文本">选择文本</h2>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;">表达式</th>
-<th></th>
-<th></th>
+<th style="text-align: center;">操作</th>
+<th style="text-align: center;">快捷键</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">p{n}</td>
-<td>正好出现 n 次模式p</td>
-<td>Java 匹配 Ja{1}va</td>
+<td style="text-align: center;">选中当前词</td>
+<td style="text-align: center;">Ctrl + D/双击鼠标</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">p{n,}</td>
-<td>至少出现 n 次模式p</td>
-<td>aaaa 匹配 a{1,}</td>
+<td style="text-align: center;">选中当前句</td>
+<td style="text-align: center;">Ctrl + L/三击鼠标</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">p{n,m}</td>
-<td>n 到 m(不包含) 次模式 p</td>
-<td>abb 不匹配 a{2,9}bb</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"></td>
-<td>一个标点符号 !"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_{|}~</td>
-<td>J?a 匹配 Ja</td>
+<td style="text-align: center;">选中当前格式文本</td>
+<td style="text-align: center;">Ctrl + E</td>
 </tr>
 </tbody>
 </table>
-<h2 id="section"></h2>
+<h2 id="样式">样式</h2>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;">表达式</th>
-<th></th>
-<th></th>
+<th style="text-align: center;">操作</th>
+<th style="text-align: center;">快捷键</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"> 一位数字，相当于[0-9]</td>
-<td>Java2 匹配 Java[</td>
-<td></td>
+<td style="text-align: center;">斜体</td>
+<td style="text-align: center;">Ctrl + I</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td>一位非数字</td>
-<td>$Java 匹配 []J[]va</td>
+<td style="text-align: center;">粗体</td>
+<td style="text-align: center;">Ctrl + B</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td>单词字符</td>
-<td>Java1 匹配 []ava[</td>
+<td style="text-align: center;">超链接</td>
+<td style="text-align: center;">Ctrl + K</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td>非单词字符</td>
-<td>$Java 匹配 []J[]va</td>
+<td style="text-align: center;">下划线</td>
+<td style="text-align: center;">Ctrl + U</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
-<td>空白字符</td>
-<td>Java 2 匹配 Java[]2</td>
+<td style="text-align: center;">删除线</td>
+<td style="text-align: center;">spanlt + Shift + 5</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
-<td>非空白字符</td>
-<td>Java 匹配 []ava</td>
+<td style="text-align: center;">引用</td>
+<td style="text-align: center;">Ctrl + Shift + Q</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">代码</td>
+<td style="text-align: center;">Ctrl + Shift + K</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">清除样式</td>
+<td style="text-align: center;">Ctrl + \</td>
 </tr>
 </tbody>
 </table>
-<h2 id="符号表达式">符号表达式</h2>
+<h2 id="查找删除">查找删除</h2>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;">表达式</th>
-<th></th>
-<th></th>
+<th style="text-align: center;">操作</th>
+<th style="text-align: center;">快捷键</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">.</td>
-<td>任意单个字符，除了换行符</td>
-<td>Java 匹配 J..a</td>
+<td style="text-align: center;">删除当前词</td>
+<td style="text-align: center;">Ctrl + Shift + D</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">p?</td>
-<td>0 次或者 1 次出现模式p，相当于{0,1}</td>
-<td>Java 匹配 J?Java</td>
+<td style="text-align: center;">查找上一个</td>
+<td style="text-align: center;">F3</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">p+</td>
-<td>1 次或者多次出现模式p，相当于{1,}</td>
-<td>Java 匹配 Ja+va</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">p*</td>
-<td>0 次或者多次出现模式p，相当于{0,}</td>
-<td>abab 匹配 (ab)*</td>
+<td style="text-align: center;">查找下一个</td>
+<td style="text-align: center;">Shift + F3</td>
 </tr>
 </tbody>
 </table>
+<h2 id="跳转">跳转</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">操作</th>
+<th style="text-align: center;">快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">跳转选中文本</td>
+<td style="text-align: center;">Ctrl + J</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">跳转文首</td>
+<td style="text-align: center;">Ctrl + Home</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">跳转文尾</td>
+<td style="text-align: center;">Ctrl + End</td>
+</tr>
+</tbody>
+</table>
+<h2 id="标题与表格">标题与表格</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">操作</th>
+<th style="text-align: center;">快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">提升标题等级</td>
+<td style="text-align: center;">Ctrl + =</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">降低标题等级</td>
+<td style="text-align: center;">Ctrl + -</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">设为普通文本</td>
+<td style="text-align: center;">Ctrl + 0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">设为六级标题</td>
+<td style="text-align: center;">Ctrl + 6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">表格增加行</td>
+<td style="text-align: center;">Ctrl + Enter</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">表格删除行</td>
+<td style="text-align: center;">Ctrl + Shift + Bspanckspspance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="小技巧">小技巧</h2>
+<ul>
+<li><p>生成目录<code>[TOC]</code></p></li>
+<li><p>上下标</p>
+<figure class="highlight parser3"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">上标：</span><span class="keyword">^2</span><span class="xml">^</span></span><br><span class="line"><span class="xml">下标：~</span><span class="number">2</span><span class="xml">~</span></span><br></pre></td></tr></table></figure></li>
+<li><p>脚注</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[^脚注]</span><br><span class="line">[<span class="symbol">^脚注</span>]:<span class="link">说明</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
     </div>
@@ -381,7 +406,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -447,13 +472,15 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">categories</span>
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">1</span>
@@ -491,7 +518,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

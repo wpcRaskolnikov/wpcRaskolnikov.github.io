@@ -23,27 +23,27 @@
   <meta name="description" content="The commonest thing is delightful if only one hides it.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="WPCのBLOG">
-<meta property="og:url" content="http://example.com/archives/2021/10/index.html">
+<meta property="og:url" content="http://example.com/page/11/index.html">
 <meta property="og:site_name" content="WPCのBLOG">
 <meta property="og:description" content="The commonest thing is delightful if only one hides it.">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="wpc">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2021/10/">
+<link rel="canonical" href="http://example.com/page/11/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : false,
+    isHome : true,
     isPost : false,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | WPCのBLOG</title>
+  <title>WPCのBLOG</title>
   
 
 
@@ -159,91 +159,230 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
 
-  
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 12 posts in total. Keep on posting.</span>
-      </div>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wpc">
+      <meta itemprop="description" content="The commonest thing is delightful if only one hides it.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WPCのBLOG">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">正则表达式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-10-30 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-30T00:00:00+08:00">2021-10-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-12-20 17:27:53" itemprop="dateModified" datetime="2021-12-20T17:27:53+08:00">2021-12-20</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+          <h2 id="表达式">[]表达式</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">表达式</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">[ab]</td>
+<td>a 或者 b</td>
+<td>Java 匹配 J[abc]va</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[^ab]</td>
+<td>除了 a, b 以外的所有字符</td>
+<td>Java 不匹配 J[ ^a]va</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">(ab|cd)</td>
+<td>ab 或者 cd</td>
+<td>Java 匹配 J(av|ac)a</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[a-z]</td>
+<td>a 到 z</td>
+<td>Java 匹配 [A-M]a[a-z]a</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">[^a-z]</td>
+<td>除了 a 到 z 的字符</td>
+<td>Java 匹配 Jav[ ^b-d]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[a-e[m-p]]</td>
+<td>a 到 e 或 m 到 p</td>
+<td>Java 匹配 [A-G[I-M]]av[a-d]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">[a-e&amp;&amp;[m-p]]</td>
+<td>a 到 e 和 m 到 p</td>
+<td>Java 匹配 [A-P&amp;&amp;[I-M]]av[a-d]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="表达式-1">{}表达式</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">表达式</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">p{n}</td>
+<td>正好出现 n 次模式p</td>
+<td>Java 匹配 Ja{1}va</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">p{n,}</td>
+<td>至少出现 n 次模式p</td>
+<td>aaaa 匹配 a{1,}</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">p{n,m}</td>
+<td>n 到 m(不包含) 次模式 p</td>
+<td>abb 不匹配 a{2,9}bb</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td>一个标点符号 !"#$%&amp;'()*+,-./:;&lt;=&gt;?@[]^_{|}~</td>
+<td>J?a 匹配 Ja</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section"></h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">表达式</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"> 一位数字，相当于[0-9]</td>
+<td>Java2 匹配 Java[</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td>一位非数字</td>
+<td>$Java 匹配 []J[]va</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td>单词字符</td>
+<td>Java1 匹配 []ava[</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td>非单词字符</td>
+<td>$Java 匹配 []J[]va</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td>空白字符</td>
+<td>Java 2 匹配 Java[]2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td>非空白字符</td>
+<td>Java 匹配 []ava</td>
+</tr>
+</tbody>
+</table>
+<h2 id="符号表达式">符号表达式</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">表达式</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">.</td>
+<td>任意单个字符，除了换行符</td>
+<td>Java 匹配 J..a</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">p?</td>
+<td>0 次或者 1 次出现模式p，相当于{0,1}</td>
+<td>Java 匹配 J?Java</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">p+</td>
+<td>1 次或者多次出现模式p，相当于{1,}</td>
+<td>Java 匹配 Ja+va</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">p*</td>
+<td>0 次或者多次出现模式p，相当于{0,}</td>
+<td>abab 匹配 (ab)*</td>
+</tr>
+</tbody>
+</table>
+
+      
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-10-30T00:00:00+08:00"
-              content="2021-10-30">
-          10-30
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/10/30/Java%20%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">Java 语言基础</span>
-          </a>
-      </div>
-
-    </header>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-10-30T00:00:00+08:00"
-              content="2021-10-30">
-          10-30
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url">
-            <span itemprop="name">正则表达式</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-10-20T00:00:00+08:00"
-              content="2021-10-20">
-          10-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/10/20/Git%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" itemprop="url">
-            <span itemprop="name">Git 基础教程</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
-    </div>
-  </div>
   
   
   
 
+
   
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
 
 
 
