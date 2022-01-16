@@ -29,7 +29,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/pic/算法导论笔记/Recursion%20tree.png">
 <meta property="article:published_time" content="2022-01-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-01-16T05:38:34.279Z">
+<meta property="article:modified_time" content="2022-01-16T06:02:47.651Z">
 <meta property="article:author" content="wpc">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/pic/算法导论笔记/Recursion%20tree.png">
@@ -205,7 +205,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-16 13:38:34" itemprop="dateModified" datetime="2022-01-16T13:38:34+08:00">2022-01-16</time>
+                <time title="Modified: 2022-01-16 14:02:47" itemprop="dateModified" datetime="2022-01-16T14:02:47+08:00">2022-01-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -271,8 +271,8 @@
 <li>Algorithmic mathematics provides a <strong>language</strong> for talking about program behavior.</li>
 <li>Performance is the <strong>currency</strong> of computing,it's the universal thing that you quantify.</li>
 </ul>
-<span id="more"></span>
 <hr />
+<span id="more"></span>
 <h2 id="insertion-sort">Insertion sort</h2>
 <p><strong>Input:</strong> sequence 〈a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub> 〉of numbers. <strong>Output:</strong> permutation〈a'<sub>1</sub>, a'<sub>2</sub>, ..., a'<sub>n</sub> 〉such that a'<sub>1</sub> ≤ a'<sub>2</sub> ≤ ··· ≤ a'<sub>n</sub>.</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">INSERTION-SORT(A,n)  ▷A[<span class="number">1.</span>.n]</span><br><span class="line"><span class="keyword">for</span> j ← <span class="number">2</span> to n</span><br><span class="line">	<span class="keyword">do</span> key ← A[j]</span><br><span class="line">		i ← j - <span class="number">1</span></span><br><span class="line">		<span class="keyword">while</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> A[i] &gt; key</span><br><span class="line">		<span class="keyword">do</span> A[i+<span class="number">1</span>] ← A[i]</span><br><span class="line">			i ← i - <span class="number">1</span></span><br><span class="line">		A[i<span class="number">-1</span>] = key</span><br></pre></td></tr></table></figure>
