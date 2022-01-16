@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="开始  编译命令  1javac --module-path lib文件路径 --add-modules javafx.controls 文件名.java  运行命令  1java --module-path lib文件路径 --add-modules javafx.controls 文件名 基础   主类是 javafx.application.Application 的">
+  <meta name="description" content="开始  编译命令  1javac --module-path lib文件路径 --add-modules javafx.controls 文件名.java  运行命令  1java --module-path lib文件路径 --add-modules javafx.controls 文件名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaFx 教程">
 <meta property="og:url" content="http://example.com/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="WPCのBLOG">
-<meta property="og:description" content="开始  编译命令  1javac --module-path lib文件路径 --add-modules javafx.controls 文件名.java  运行命令  1java --module-path lib文件路径 --add-modules javafx.controls 文件名 基础   主类是 javafx.application.Application 的">
+<meta property="og:description" content="开始  编译命令  1javac --module-path lib文件路径 --add-modules javafx.controls 文件名.java  运行命令  1java --module-path lib文件路径 --add-modules javafx.controls 文件名">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/pic/JavaFx教程/JavaFx教程1.png">
 <meta property="og:image" content="http://example.com/pic/JavaFx教程/JavaFx教程2.png">
@@ -33,7 +33,7 @@
 <meta property="og:image" content="http://example.com/pic/JavaFx教程/JavaFx教程4.png">
 <meta property="og:image" content="http://example.com/pic/JavaFx教程/JavaFx教程5.png">
 <meta property="article:published_time" content="2021-11-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-20T09:29:23.391Z">
+<meta property="article:modified_time" content="2022-01-16T05:42:57.079Z">
 <meta property="article:author" content="wpc">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/pic/JavaFx教程/JavaFx教程1.png">
@@ -143,7 +143,12 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
 
   </li>
   </ul>
@@ -177,7 +182,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="wpc">
       <meta itemprop="description" content="The commonest thing is delightful if only one hides it.">
     </span>
@@ -204,10 +209,31 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-20 17:29:23" itemprop="dateModified" datetime="2021-12-20T17:29:23+08:00">2021-12-20</time>
+                <time title="Modified: 2022-01-16 13:42:57" itemprop="dateModified" datetime="2022-01-16T13:42:57+08:00">2022-01-16</time>
               </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -227,6 +253,7 @@
 <li>运行命令</li>
 </ol>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">java </span>--module-path lib文件路径 --<span class="keyword">add-modules </span><span class="keyword">javafx.controls </span>文件名</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 <h2 id="基础">基础</h2>
 <p><img src="/pic/JavaFx教程/JavaFx教程1.png" /></p>
 <ul>
@@ -988,6 +1015,26 @@
     
     
     
+        <div class="reward-container">
+  <div>您的打赏将会成为我前进的动力！！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="wpc WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="wpc Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>
@@ -1033,6 +1080,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1085,6 +1133,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wpc"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">wpc</p>
   <div class="site-description" itemprop="description">The commonest thing is delightful if only one hides it.</div>
 </div>
@@ -1093,7 +1143,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1147,6 +1197,26 @@
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -1160,6 +1230,7 @@
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -1198,6 +1269,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'W21qDuVlpXJW410zr8pP3Mhv-gzGzoHsz',
+      appKey     : 'P55bxaNdCaklCOlJxNFLvoCL',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 
   <script async src="/js/cursor/love.js"></script>

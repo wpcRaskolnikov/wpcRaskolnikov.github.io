@@ -28,7 +28,7 @@
 <meta property="og:description" content="头像时间轴和圆点时间轴 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566&lt;v-timeline&gt;  &lt;v-timeline-item v-for&#x3D;&quot;n in 3&quot;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-19T02:33:01.000Z">
-<meta property="article:modified_time" content="2021-12-20T10:08:38.864Z">
+<meta property="article:modified_time" content="2022-01-16T05:41:59.916Z">
 <meta property="article:author" content="wpc">
 <meta property="article:tag" content="vuetify">
 <meta name="twitter:card" content="summary">
@@ -138,7 +138,12 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
 
   </li>
   </ul>
@@ -172,7 +177,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/19/vuetify/vuetify2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="wpc">
       <meta itemprop="description" content="The commonest thing is delightful if only one hides it.">
     </span>
@@ -199,7 +204,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-20 18:08:38" itemprop="dateModified" datetime="2021-12-20T18:08:38+08:00">2021-12-20</time>
+                <time title="Modified: 2022-01-16 13:41:59" itemprop="dateModified" datetime="2022-01-16T13:41:59+08:00">2022-01-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -212,6 +217,27 @@
             </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/12/19/vuetify/vuetify2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/19/vuetify/vuetify2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -228,6 +254,7 @@
 <h3 id="工具提示">工具提示</h3>
 <figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">v-tooltip</span> <span class="attr">left</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:activator</span>=<span class="string">&quot;</span></span></span><span class="template-variable">&#123; on, attrs &#125;</span><span class="xml"><span class="tag"><span class="string">&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">v-btn</span> <span class="attr">color</span>=<span class="string">&quot;primary&quot;</span> <span class="attr">dark</span> <span class="attr">v-bind</span>=<span class="string">&quot;attrs&quot;</span> <span class="attr">v-on</span>=<span class="string">&quot;on&quot;</span>&gt;</span>Left<span class="tag">&lt;/<span class="name">v-btn</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>Left tooltip<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">v-tooltip</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">v-container</span> <span class="attr">fluid</span> <span class="attr">class</span>=<span class="string">&quot;text-center&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">v-row</span> <span class="attr">class</span>=<span class="string">&quot;flex&quot;</span> <span class="attr">justify</span>=<span class="string">&quot;space-between&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">v-col</span> <span class="attr">cols</span>=<span class="string">&quot;12&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">v-btn</span> @<span class="attr">click</span>=<span class="string">&quot;show = !show&quot;</span>&gt;</span>toggle<span class="tag">&lt;/<span class="name">v-btn</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">v-col</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">v-col</span> <span class="attr">cols</span>=<span class="string">&quot;12&quot;</span> <span class="attr">class</span>=<span class="string">&quot;mt-12&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">v-tooltip</span> <span class="attr">v-model</span>=<span class="string">&quot;show&quot;</span> <span class="attr">top</span>&gt;</span></span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:activator</span>=<span class="string">&quot;</span></span></span><span class="template-variable">&#123; on, attrs &#125;</span><span class="xml"><span class="tag"><span class="string">&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">v-btn</span> <span class="attr">icon</span> <span class="attr">v-bind</span>=<span class="string">&quot;attrs&quot;</span> <span class="attr">v-on</span>=<span class="string">&quot;on&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">              <span class="tag">&lt;<span class="name">v-icon</span> <span class="attr">color</span>=<span class="string">&quot;grey lighten-1&quot;</span>&gt;</span>mdi-cart<span class="tag">&lt;/<span class="name">v-icon</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">v-btn</span>&gt;</span></span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;<span class="name">span</span>&gt;</span>Programmatic tooltip<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">v-tooltip</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">v-col</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">v-row</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">v-container</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p>说明：插槽 activator 放置激活组件，需要将事件侦听器传递给指令，将对象传递给指令：on、v-on、attrs、v-bind，对齐属性有 left、top、bottom、right。还可以用 v-model 来控制工具提示的显示。</p>
+<span id="more"></span>
 <h3 id="选项卡">选项卡</h3>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;v-card&gt;</span><br><span class="line">    &lt;v-toolbar color=&quot;cyan&quot; dark flat&gt;</span><br><span class="line">      &lt;v-app-bar-nav-icon&gt;&lt;/v-app-bar-nav-icon&gt;</span><br><span class="line">      &lt;v-toolbar-title&gt;App&lt;/v-toolbar-title&gt;</span><br><span class="line">      &lt;v-spacer&gt;&lt;/v-spacer&gt;</span><br><span class="line">      &lt;v-btn icon&gt;</span><br><span class="line">        &lt;v-icon&gt;mdi-magnify&lt;/v-icon&gt;</span><br><span class="line">      &lt;/v-btn&gt;</span><br><span class="line">      &lt;v-btn icon&gt;</span><br><span class="line">        &lt;v-icon&gt;mdi-dots-vertical&lt;/v-icon&gt;</span><br><span class="line">      &lt;/v-btn&gt;</span><br><span class="line">      &lt;template v-slot:extension&gt;</span><br><span class="line">        &lt;v-tabs v-model=&quot;tab&quot; centered slider-color=&quot;yellow&quot; align-with-title&gt;</span><br><span class="line">          &lt;v-tab v-for=&quot;i in 3&quot; :key=&quot;i&quot; :href=&quot;`#tab-$&#123;i&#125;`&quot;&gt;Item &#123;&#123; i &#125;&#125;&lt;/v-tab&gt;</span><br><span class="line">        &lt;/v-tabs&gt;</span><br><span class="line">      &lt;/template&gt;</span><br><span class="line">    &lt;/v-toolbar&gt;</span><br><span class="line"></span><br><span class="line">    &lt;v-tabs-items v-model=&quot;tab&quot;&gt;</span><br><span class="line">      &lt;v-tab-item v-for=&quot;i in 3&quot; :key=&quot;i&quot; :value=&quot;`tab-$&#123;i&#125;`&quot;&gt;</span><br><span class="line">        &lt;v-card flat&gt;</span><br><span class="line">          &lt;v-card-text v-text=&quot;&#x27;hello world&#x27;&quot;&gt;&lt;/v-card-text&gt;</span><br><span class="line">        &lt;/v-card&gt;</span><br><span class="line">      &lt;/v-tab-item&gt;</span><br><span class="line">    &lt;/v-tabs-items&gt;</span><br><span class="line">  &lt;/v-card&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &quot;HelloWorld&quot;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      tab: null,</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>说明：v-app-bar-nav-icon 工具栏左边图标，v-spacer 将组件分为左右两部分，extension 槽位直接位于工具栏的主要内容下。可以使用 <strong>extension-height</strong> 属性显式设置高度。如果该插槽没有内容，可以使用 <strong>extended</strong> 属性代替。<code>align-with-title</code>将标题与工具栏标题对齐，slider-color 标签下面线的颜色。</p>
@@ -259,6 +286,26 @@
     
     
     
+        <div class="reward-container">
+  <div>您的打赏将会成为我前进的动力！！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="wpc WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="wpc Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>
@@ -307,6 +354,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -359,6 +407,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wpc"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">wpc</p>
   <div class="site-description" itemprop="description">The commonest thing is delightful if only one hides it.</div>
 </div>
@@ -367,7 +417,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -421,6 +471,26 @@
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -434,6 +504,7 @@
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -472,6 +543,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'W21qDuVlpXJW410zr8pP3Mhv-gzGzoHsz',
+      appKey     : 'P55bxaNdCaklCOlJxNFLvoCL',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 
   <script async src="/js/cursor/love.js"></script>

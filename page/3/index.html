@@ -135,7 +135,12 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
 
   </li>
   </ul>
@@ -168,7 +173,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/20/vuetify/vuetify4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="wpc">
       <meta itemprop="description" content="The commonest thing is delightful if only one hides it.">
     </span>
@@ -188,10 +193,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-12-20 00:00:00 / Modified: 18:08:32" itemprop="dateCreated datePublished" datetime="2021-12-20T00:00:00+08:00">2021-12-20</time>
+              <time title="Created: 2021-12-20 00:00:00" itemprop="dateCreated datePublished" datetime="2021-12-20T00:00:00+08:00">2021-12-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-01-16 13:42:19" itemprop="dateModified" datetime="2022-01-16T13:42:19+08:00">2022-01-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -203,6 +214,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/12/20/vuetify/vuetify4/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/20/vuetify/vuetify4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -216,8 +241,14 @@
           <h3 id="表格">表格</h3>
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;v-data-table</span><br><span class="line">    <span class="symbol">:headers=<span class="string">&quot;&quot;</span></span></span><br><span class="line">    <span class="symbol">:items=<span class="string">&quot;&quot;</span></span></span><br><span class="line">    <span class="symbol">:sort-by</span>.sync=<span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="symbol">:sort-desc</span>.sync=<span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="symbol">:loading=<span class="string">&quot;&quot;</span></span></span><br><span class="line">    class=<span class="string">&quot;elevation-1&quot;</span></span><br><span class="line">&gt;&lt;<span class="regexp">/v-data-table&gt;</span></span><br></pre></td></tr></table></figure>
 <p>说明：header、items 对象数组，header 对象中有 text、align、value 属性，items 对象中有 header 中 value 的值 ，sort-by.sync header 中用来排序的 value，可以通过修改它来修改用来排序的列，sort-desc.sync 判断是否倒序，可以通过控制它来控制升降序。loading 为 true 有进度条效果。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;v-data-table</span><br><span class="line">        :headers=&quot;headers&quot;</span><br><span class="line">        :items=&quot;desserts&quot;</span><br><span class="line">        :options.sync=&quot;options&quot;</span><br><span class="line">        :server-items-length=&quot;totalDesserts&quot;</span><br><span class="line">        :loading=&quot;loading&quot;</span><br><span class="line">        class=&quot;elevation-1&quot;</span><br><span class="line">    &gt;&lt;/v-data-table&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &quot;HelloWorld&quot;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      totalDesserts: 0,</span><br><span class="line">      desserts: [],</span><br><span class="line">      loading: true,</span><br><span class="line">      options: &#123;&#125;,</span><br><span class="line">      headers: [</span><br><span class="line">        &#123;</span><br><span class="line">          text: &quot;Dessert (100g serving)&quot;,</span><br><span class="line">          align: &quot;start&quot;,</span><br><span class="line">          sortable: false,</span><br><span class="line">          value: &quot;name&quot;,</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123; text: &quot;Calories&quot;, value: &quot;calories&quot; &#125;,</span><br><span class="line">        &#123; text: &quot;Fat (g)&quot;, value: &quot;fat&quot; &#125;,</span><br><span class="line">      ],</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  watch: &#123;</span><br><span class="line">    options: &#123;</span><br><span class="line">      async handler() &#123;</span><br><span class="line">        const &#123; items, total &#125; = await this.getDataFromApi();</span><br><span class="line">        this.desserts = items;</span><br><span class="line">        this.totalDesserts = total;</span><br><span class="line">      &#125;,</span><br><span class="line">      deep: true,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  async mounted() &#123;</span><br><span class="line">    const &#123; items, total &#125; = await this.getDataFromApi();</span><br><span class="line">    this.desserts = items;</span><br><span class="line">    this.totalDesserts = total;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    getDataFromApi() &#123;</span><br><span class="line">      this.loading = true;</span><br><span class="line">      return new Promise((resolve) =&gt; &#123;</span><br><span class="line">        const &#123; sortBy, sortDesc, page, itemsPerPage &#125; = this.options;</span><br><span class="line"></span><br><span class="line">        let items = this.getDesserts();</span><br><span class="line">        const total = items.length;</span><br><span class="line"></span><br><span class="line">        if (sortBy.length === 1 &amp;&amp; sortDesc.length === 1) &#123;</span><br><span class="line">          items = items.sort((a, b) =&gt; &#123;</span><br><span class="line">            const sortA = a[sortBy[0]];</span><br><span class="line">            const sortB = b[sortBy[0]];</span><br><span class="line"></span><br><span class="line">            if (sortDesc[0]) &#123;</span><br><span class="line">              if (sortA &lt; sortB) return 1;</span><br><span class="line">              if (sortA &gt; sortB) return -1;</span><br><span class="line">              return 0;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">              if (sortA &lt; sortB) return -1;</span><br><span class="line">              if (sortA &gt; sortB) return 1;</span><br><span class="line">              return 0;</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (itemsPerPage &gt; 0) &#123;</span><br><span class="line">          items = items.slice((page - 1) * itemsPerPage, page * itemsPerPage);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        setTimeout(() =&gt; &#123;</span><br><span class="line">          this.loading = false;</span><br><span class="line">          resolve(&#123;</span><br><span class="line">            items,</span><br><span class="line">            total,</span><br><span class="line">          &#125;);</span><br><span class="line">        &#125;, 1000);</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">    getDesserts() &#123;</span><br><span class="line">      return [</span><br><span class="line">        &#123;</span><br><span class="line">          name: &quot;Frozen Yogurt&quot;,</span><br><span class="line">          calories: 159,</span><br><span class="line">          fat: 6.0,</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          name: &quot;Ice cream sandwich&quot;,</span><br><span class="line">          calories: 237,</span><br><span class="line">          fat: 9.0,</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          name: &quot;Eclair&quot;,</span><br><span class="line">          calories: 262,</span><br><span class="line">          fat: 16.0,</span><br><span class="line">        &#125;,</span><br><span class="line">      ];</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/12/20/vuetify/vuetify4/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -235,7 +266,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -293,6 +324,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wpc"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">wpc</p>
   <div class="site-description" itemprop="description">The commonest thing is delightful if only one hides it.</div>
 </div>
@@ -301,7 +334,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -355,6 +388,26 @@
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -368,6 +421,7 @@
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -406,6 +460,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'W21qDuVlpXJW410zr8pP3Mhv-gzGzoHsz',
+      appKey     : 'P55bxaNdCaklCOlJxNFLvoCL',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 
   <script async src="/js/cursor/love.js"></script>

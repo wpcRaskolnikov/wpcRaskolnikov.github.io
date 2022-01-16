@@ -135,7 +135,12 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
 
   </li>
   </ul>
@@ -168,7 +173,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/15/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Introduction/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="wpc">
       <meta itemprop="description" content="The commonest thing is delightful if only one hides it.">
     </span>
@@ -188,10 +193,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-01-15 00:00:00 / Modified: 21:36:20" itemprop="dateCreated datePublished" datetime="2022-01-15T00:00:00+08:00">2022-01-15</time>
+              <time title="Created: 2022-01-15 00:00:00" itemprop="dateCreated datePublished" datetime="2022-01-15T00:00:00+08:00">2022-01-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-01-16 13:38:34" itemprop="dateModified" datetime="2022-01-16T13:38:34+08:00">2022-01-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -203,6 +214,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2022/01/15/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Introduction/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/15/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Introduction/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -235,77 +260,14 @@
 <li>Algorithmic mathematics provides a <strong>language</strong> for talking about program behavior.</li>
 <li>Performance is the <strong>currency</strong> of computing,it's the universal thing that you quantify.</li>
 </ul>
-<hr />
-<h2 id="insertion-sort">Insertion sort</h2>
-<p><strong>Input:</strong> sequence 〈a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub> 〉of numbers. <strong>Output:</strong> permutation〈a'<sub>1</sub>, a'<sub>2</sub>, ..., a'<sub>n</sub> 〉such that a'<sub>1</sub> ≤ a'<sub>2</sub> ≤ ··· ≤ a'<sub>n</sub>.</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">INSERTION-SORT(A,n)  ▷A[<span class="number">1.</span>.n]</span><br><span class="line"><span class="keyword">for</span> j ← <span class="number">2</span> to n</span><br><span class="line">	<span class="keyword">do</span> key ← A[j]</span><br><span class="line">		i ← j - <span class="number">1</span></span><br><span class="line">		<span class="keyword">while</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> A[i] &gt; key</span><br><span class="line">		<span class="keyword">do</span> A[i+<span class="number">1</span>] ← A[i]</span><br><span class="line">			i ← i - <span class="number">1</span></span><br><span class="line">		A[i<span class="number">-1</span>] = key</span><br></pre></td></tr></table></figure>
-<h3 id="running-time">Running time</h3>
-<ul>
-<li>The running time depends on the input.</li>
-<li>Parameterize the running time by the size of the input.</li>
-<li>Generally, we seek upper bounds on the running time(because everybody likes a guarantee).</li>
-</ul>
-<h4 id="kinds-of-analyses">Kinds of analyses</h4>
-<ul>
-<li><strong><em>Worst-case:</em> (usually)</strong>
-<ul>
-<li><span class="math inline">\(T(n)\)</span> = maximum time of algorithm on any input of size <em>n</em>.</li>
-</ul></li>
-<li><strong><em>Average-case:</em> (sometimes)</strong>
-<ul>
-<li><span class="math inline">\(T(n)\)</span> = expected time of algorithm over all Inputs of size <em>n</em>.</li>
-<li>Need assumption of statistical distribution of inputs.</li>
-</ul></li>
-<li><strong><em>Best-case:</em> (bogus)</strong>
-<ul>
-<li>Cheat with a slow algorithm that works fast on some input.</li>
-</ul></li>
-</ul>
-<h4 id="asymptotic-analysis">Asymptotic Analysis</h4>
-<p>HUGE IDEA: - Ignore machine-dependent constants. - Look at <strong><em>growth</em></strong> of T(n) as <span class="math inline">\(n \to \infty\)</span>.</p>
-<h4 id="theta-notation"><span class="math inline">\(\Theta\)</span>-notation</h4>
-<ul>
-<li>Drop low-order terms.</li>
-<li>Ignore leading constants.</li>
-</ul>
-<h4 id="insertion-sort-analysis">Insertion sort analysis</h4>
-<ul>
-<li><p>Worst case: Input reverse sorted</p>
-<p><span class="math inline">\(T(n)=\sum_{j=2}^{n}\Theta(j)=\Theta(n^2)\quad[arithmetic series]\)</span></p></li>
-<li><p>Average case: All permutations equally likely</p>
-<p><span class="math inline">\(T(n)=\sum_{j=2}^{n}\Theta(j/2)=\Theta(n^2)\quad[arithmetic series]\)</span></p></li>
-</ul>
-<hr />
-<h3 id="merge-sort">Merge sort</h3>
-<blockquote>
-<ol type="1">
-<li>If <em>n=1</em>, done.</li>
-<li>Recursively sort A[1.. <span class="math inline">\(\lceil n/2 \rceil\)</span>] 1 and A[<span class="math inline">\(\lceil n/2+1 \rceil\)</span>.. n].</li>
-<li><strong>Merge</strong> the 2 sorted lists.</li>
-</ol>
-</blockquote>
-<p><strong><em>Key subroutine:</em> MERGE</strong></p>
-<h4 id="analyzing-merge-sort">Analyzing merge sort</h4>
-<ol type="1">
-<li><p><span class="math inline">\(\Theta(1)\)</span></p></li>
-<li><p><span class="math inline">\(2T(n/2)\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
-<li><p><span class="math inline">\(\Theta(n)\)</span></p></li>
-</ol>
-<p><span class="math display">\[
-T(n)=\begin{cases}
-\Theta(1) &amp; n=1 \\
-T(n/2)+\Theta(n) &amp;  n&gt;1
-\end{cases}
-\]</span></p>
-<h4 id="recursion-tree">Recursion tree</h4>
-<p><img src="/pic/算法导论笔记/Recursion%20tree.png" /></p>
-<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1" role="doc-endnote"><p>Sloppiness: Should be <span class="math inline">\(T(\lceil n/2 \rceil)+T(\lfloor n/2 \rfloor)\)</span>​, but it turns out not to matter asymptotically.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/01/15/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Introduction/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -323,7 +285,7 @@ T(n/2)+\Theta(n) &amp;  n&gt;1
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -381,6 +343,8 @@ T(n/2)+\Theta(n) &amp;  n&gt;1
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wpc"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">wpc</p>
   <div class="site-description" itemprop="description">The commonest thing is delightful if only one hides it.</div>
 </div>
@@ -389,7 +353,7 @@ T(n/2)+\Theta(n) &amp;  n&gt;1
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -443,6 +407,26 @@ T(n/2)+\Theta(n) &amp;  n&gt;1
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -456,6 +440,7 @@ T(n/2)+\Theta(n) &amp;  n&gt;1
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -547,6 +532,35 @@ T(n/2)+\Theta(n) &amp;  n&gt;1
     
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'W21qDuVlpXJW410zr8pP3Mhv-gzGzoHsz',
+      appKey     : 'P55bxaNdCaklCOlJxNFLvoCL',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 
   <script async src="/js/cursor/love.js"></script>

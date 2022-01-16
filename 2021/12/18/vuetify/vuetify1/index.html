@@ -28,7 +28,7 @@
 <meta property="og:description" content="v-container v-container 提供了将你的网站内容居中和水平填充的功能。 你还可以使用 fluid 属性将容器在所有视口和设备尺寸上完全扩展。 保持了之前 1.x 的功能，其中属性作为 v-container 上的类进行传递，以使应用辅助类（如 ma-#&#x2F;pa-#&#x2F;fill-height）生效。 v-col v-col 包裹内容，它必须是 v-row 的直接子代。 这是 2">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-12-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-12-20T10:08:42.629Z">
+<meta property="article:modified_time" content="2022-01-16T05:41:50.812Z">
 <meta property="article:author" content="wpc">
 <meta property="article:tag" content="vuetify">
 <meta name="twitter:card" content="summary">
@@ -138,7 +138,12 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">11</span></a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a>
 
   </li>
   </ul>
@@ -172,7 +177,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/18/vuetify/vuetify1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="wpc">
       <meta itemprop="description" content="The commonest thing is delightful if only one hides it.">
     </span>
@@ -199,7 +204,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-20 18:08:42" itemprop="dateModified" datetime="2021-12-20T18:08:42+08:00">2021-12-20</time>
+                <time title="Modified: 2022-01-16 13:41:50" itemprop="dateModified" datetime="2022-01-16T13:41:50+08:00">2022-01-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -212,6 +217,27 @@
             </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/12/18/vuetify/vuetify1/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/12/18/vuetify/vuetify1/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -228,9 +254,10 @@
 <p><code>v-col</code> 包裹内容，它必须是 <code>v-row</code> 的直接子代。 这是 2.x 版本对 1.x 版本中 <code>v-flex</code> 的替代。</p>
 <h3 id="v-row">v-row</h3>
 <p><code>v-row</code> 是 <code>v-col</code> 的容器组件。 它使用 flex 属性来控制其内栏的布局和流。 它使用的是 <strong>24px</strong> 的标准间隔。 这可以用 <strong>dense</strong> 属性来减小，或者用 <strong>no-gutters</strong> 来完全去除。 这是 2.x 版本对 1.x 版本中 <code>v-layout</code> 的替代。</p>
+<span id="more"></span>
 <h3 id="v-spacer">v-spacer</h3>
 <p><code>v-spacer</code> 是一个基本而又通用的间隔组件，用于分配父子组件之间的剩余宽度。 当一个 <code>v-spacer</code> 放置在子组件之前或之后时，组件将推到其容器的左右两侧。 当多个组件之间使用多个 <code>v-spacer</code> 时，剩余的宽度将均匀地分布在每个 spacer 之间。</p>
-<h3 id="v-row-1">v-row</h3>
+<h3 id="icon">icon</h3>
 <p><code>mdi-open-in-new</code> 分享图标、<code>mdi-home</code> 回家图标、<code>mdi-email</code> 邮件图标、<code>mdi-alarm</code> 闹钟图标、<code>mdi-record</code> 点样式、<code>mdi-folder</code> 文件夹图标、<code>mdi-folder-open</code> 打开的文件夹图标、<code>mdi-clear</code> X图标、<code>mdi-close-circle-outline</code> 带圆的 X 图标、 <code>mdi-cart</code> 购物车图标、<code>mdi-magnify</code> 搜索图标、<code>mdi-dots-vertical</code> 更多图标、<code>mdi-arrow-left-bold-box-outline</code> 左箭头， <code>mdi-arrow-right-bold-box-outline</code> 右箭头、<code>mdi-star</code> 星标、<code>mdi-book-variant</code> 收藏书图标、<code>mdi-airballoon</code> 气球图标。</p>
 <h3 id="单选按钮">单选按钮</h3>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;v-app&gt;</span><br><span class="line">    &lt;v-container&gt;</span><br><span class="line">      &lt;v-row&gt;</span><br><span class="line">        &lt;v-col&gt;</span><br><span class="line">          &lt;v-radio-group v-model=&quot;radios&quot; column&gt;</span><br><span class="line">            &lt;v-radio label=&quot;Radio 1&quot; value=&quot;radio-1&quot; color=&quot;red&quot;&gt;&lt;/v-radio&gt;</span><br><span class="line">            &lt;v-radio label=&quot;Radio 2&quot; value=&quot;radio-2&quot; color=&quot;green&quot;&gt;&lt;/v-radio&gt;</span><br><span class="line">          &lt;/v-radio-group&gt;</span><br><span class="line">        &lt;/v-col&gt;</span><br><span class="line">      &lt;/v-row&gt;</span><br><span class="line">    &lt;/v-container&gt;</span><br><span class="line">  &lt;/v-app&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
@@ -299,6 +326,26 @@
     
     
     
+        <div class="reward-container">
+  <div>您的打赏将会成为我前进的动力！！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="wpc WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="wpc Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>
@@ -347,6 +394,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -393,12 +441,14 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#v-container"><span class="nav-text">v-container</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-col"><span class="nav-text">v-col</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-row"><span class="nav-text">v-row</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-spacer"><span class="nav-text">v-spacer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-row-1"><span class="nav-text">v-row</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE"><span class="nav-text">单选按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%85%B3"><span class="nav-text">开关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E9%80%89%E6%A1%86"><span class="nav-text">复选框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%BD%E7%AB%A0"><span class="nav-text">徽章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%AA%E5%B9%85"><span class="nav-text">横幅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AD%A6%E6%8A%A5"><span class="nav-text">警报</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-app"><span class="nav-text">v-app</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%95%BF%E5%AE%BD%E6%AF%94"><span class="nav-text">长宽比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%B4%E5%83%8F"><span class="nav-text">头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%BB%9A%E5%8A%A8%E6%9D%A1"><span class="nav-text">虚拟滚动条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E5%8D%95%E5%87%BB"><span class="nav-text">外部单击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%91%E8%A7%86%E5%9B%BE"><span class="nav-text">树视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%91%E8%A7%86%E7%BB%91%E5%AE%9A%E5%85%83%E7%B4%A0"><span class="nav-text">监视绑定元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A6%E6%91%B8%E6%94%AF%E6%8C%81"><span class="nav-text">触摸支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E6%95%B4%E5%A4%A7%E5%B0%8F"><span class="nav-text">调整大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A2%E7%BA%B9%E6%95%88%E6%9E%9C"><span class="nav-text">波纹效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BB%9A%E5%8A%A8%E6%9D%A1"><span class="nav-text">滚动条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E7%9B%91%E6%B5%8B"><span class="nav-text">交叉监测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%81%E5%8F%98%E7%9B%91%E6%B5%8B"><span class="nav-text">突变监测</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#v-container"><span class="nav-text">v-container</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-col"><span class="nav-text">v-col</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-row"><span class="nav-text">v-row</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-spacer"><span class="nav-text">v-spacer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#icon"><span class="nav-text">icon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE"><span class="nav-text">单选按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%85%B3"><span class="nav-text">开关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E9%80%89%E6%A1%86"><span class="nav-text">复选框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%BD%E7%AB%A0"><span class="nav-text">徽章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%AA%E5%B9%85"><span class="nav-text">横幅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AD%A6%E6%8A%A5"><span class="nav-text">警报</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#v-app"><span class="nav-text">v-app</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%95%BF%E5%AE%BD%E6%AF%94"><span class="nav-text">长宽比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%B4%E5%83%8F"><span class="nav-text">头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%BB%9A%E5%8A%A8%E6%9D%A1"><span class="nav-text">虚拟滚动条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E5%8D%95%E5%87%BB"><span class="nav-text">外部单击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%91%E8%A7%86%E5%9B%BE"><span class="nav-text">树视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%91%E8%A7%86%E7%BB%91%E5%AE%9A%E5%85%83%E7%B4%A0"><span class="nav-text">监视绑定元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A6%E6%91%B8%E6%94%AF%E6%8C%81"><span class="nav-text">触摸支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%83%E6%95%B4%E5%A4%A7%E5%B0%8F"><span class="nav-text">调整大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A2%E7%BA%B9%E6%95%88%E6%9E%9C"><span class="nav-text">波纹效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%BB%9A%E5%8A%A8%E6%9D%A1"><span class="nav-text">滚动条</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%A4%E5%8F%89%E7%9B%91%E6%B5%8B"><span class="nav-text">交叉监测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%81%E5%8F%98%E7%9B%91%E6%B5%8B"><span class="nav-text">突变监测</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wpc"
+      src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">wpc</p>
   <div class="site-description" itemprop="description">The commonest thing is delightful if only one hides it.</div>
 </div>
@@ -407,7 +457,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -461,6 +511,26 @@
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -474,6 +544,7 @@
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -512,6 +583,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'W21qDuVlpXJW410zr8pP3Mhv-gzGzoHsz',
+      appKey     : 'P55bxaNdCaklCOlJxNFLvoCL',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 
   <script async src="/js/cursor/love.js"></script>
