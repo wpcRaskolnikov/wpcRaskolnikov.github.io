@@ -135,7 +135,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">13</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
@@ -170,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/19/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Recurrences/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/20/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Divide%20and%20Conquer/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -184,7 +184,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/01/19/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Recurrences/" class="post-title-link" itemprop="url">Recurrences</a>
+            <a href="/2022/01/20/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Divide%20and%20Conquer/" class="post-title-link" itemprop="url">Divide and Conquer</a>
         </h2>
 
         <div class="post-meta">
@@ -195,7 +195,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-01-19 00:00:00 / Modified: 22:44:23" itemprop="dateCreated datePublished" datetime="2022-01-19T00:00:00+08:00">2022-01-19</time>
+              <time title="Created: 2022-01-20 00:00:00 / Modified: 20:45:59" itemprop="dateCreated datePublished" datetime="2022-01-20T00:00:00+08:00">2022-01-20</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -216,8 +216,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2022/01/19/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Recurrences/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/19/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Recurrences/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/01/20/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Divide%20and%20Conquer/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/20/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Divide%20and%20Conquer/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -232,31 +232,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="recurrences">Recurrences</h2>
-<h3 id="asymptotic-notation">Asymptotic notation</h3>
-<h4 id="omicron-notationupper-bounds"><span class="math inline">\(\Omicron\)</span>-notation(upper bounds)</h4>
+          <h2 id="divide-and-conquer">Divide and Conquer</h2>
+<h3 id="the-divide-and-conquer-design-paradigm">The divide-and-conquer design paradigm</h3>
 <blockquote>
-<p><span class="math inline">\(\Omicron(g(n))=\)</span>{<span class="math inline">\(f(n)\)</span>: there exist constants <span class="math inline">\(c&gt;0,n_0&gt;0\)</span> such that <span class="math inline">\(0≤f(m)≤cg(n)\)</span> for all <span class="math inline">\(n&gt;n_0\)</span>}</p>
+<ol type="1">
+<li><strong><em>Divide</em></strong> the problem (instance) into subproblems.</li>
+<li><strong><em>Conquer</em></strong> the subproblems by solving them recursively.</li>
+<li><strong><em>Combine</em></strong> subproblem solutions.</li>
+</ol>
 </blockquote>
-<h4 id="omega-notationlower-bounds"><span class="math inline">\(\Omega\)</span>-notation(lower bounds)</h4>
-<blockquote>
-<p><span class="math inline">\(\Omega(g(n))=\)</span>{<span class="math inline">\(f(n):\)</span> there exist constants <span class="math inline">\(c&gt;0,n_0&gt;0\)</span> such that <span class="math inline">\(0≤cg(m)≤f(m)\)</span> for all <span class="math inline">\(n&gt;n_0\)</span>}</p>
-</blockquote>
-<h4 id="theta-notationtight-bounds"><span class="math inline">\(\Theta\)</span>-notation(tight bounds)</h4>
-<blockquote>
-<p><span class="math inline">\(\Theta(g(n))=\Omega(g(n)) \cap \Omicron(g(n))\)</span></p>
-</blockquote>
-<h4 id="omicron-notation"><span class="math inline">\(\omicron\)</span>-notation</h4>
-<blockquote>
-<p><span class="math inline">\(\omicron(g(n))=\)</span>{<span class="math inline">\(f(n)\)</span>: for <strong>any</strong> constants <span class="math inline">\(c&gt;0\)</span>, there is a constant <span class="math inline">\(n_0&gt;0\)</span> such that <span class="math inline">\(0≤f(m)≤cg(n)\)</span> for all <span class="math inline">\(n&gt;n_0\)</span>}</p>
-</blockquote>
-<h4 id="omega-notation"><span class="math inline">\(\omega\)</span>-notation</h4>
-<blockquote>
-<p><span class="math inline">\(\omega(g(n))=\)</span>{<span class="math inline">\(f(n)\)</span>: for <strong>any</strong> constants <span class="math inline">\(c&gt;0\)</span>, there is a constant <span class="math inline">\(n_0&gt;0\)</span> such that <span class="math inline">\(0≤cg(m)≤f(m)\)</span> for all <span class="math inline">\(n&gt;n_0\)</span>}</p>
-</blockquote>
+<p><strong>EXAMPLE:</strong></p>
+<ol type="1">
+<li><p>Merge sort <span class="math inline">\(T(n)=2T(n/2)+\Theta(n)\Rightarrow T(n)=\Theta(n\lg n)\)</span>​</p></li>
+<li><p>Binary search <span class="math inline">\(T(n)=T(n/2)+\Theta(1)\Rightarrow T(n)=\Theta(\lg n)\)</span></p></li>
+<li><p>Powering a number <span class="math inline">\(T(n)=T(n/2)+\Theta(1)\Rightarrow T(n)=\Theta(\lg n)\)</span></p></li>
+</ol>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/01/19/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Recurrences/#more" rel="contents">
+              <a class="btn" href="/2022/01/20/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Divide%20and%20Conquer/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -279,7 +272,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -347,7 +340,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

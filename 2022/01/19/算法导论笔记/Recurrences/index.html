@@ -20,16 +20,17 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Recurrences Asymptotic notation \(\Omicron\)-notation(upper bounds)  \(\Omicron(g(n))&#x3D;\){\(f(n)\): there exist constants \(c&gt;0,n_0&gt;0\) such that \(0≤f(m)≤cg(n)\) for all \(n&gt;n_0\)}  \(\">
+  <meta name="description" content="Recurrences Asymptotic notation \(O\)-notation(upper bounds)  \(O(g(n))&#x3D;\){\(f(n)\): there exist constants \(c&gt;0,n_0&gt;0\) such that \(0≤f(m)≤cg(n)\) for all \(n&gt;n_0\)}  \(\Omega\)-notati">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Recurrences">
 <meta property="og:url" content="http://example.com/2022/01/19/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Recurrences/index.html">
 <meta property="og:site_name" content="WPCのBLOG">
-<meta property="og:description" content="Recurrences Asymptotic notation \(\Omicron\)-notation(upper bounds)  \(\Omicron(g(n))&#x3D;\){\(f(n)\): there exist constants \(c&gt;0,n_0&gt;0\) such that \(0≤f(m)≤cg(n)\) for all \(n&gt;n_0\)}  \(\">
+<meta property="og:description" content="Recurrences Asymptotic notation \(O\)-notation(upper bounds)  \(O(g(n))&#x3D;\){\(f(n)\): there exist constants \(c&gt;0,n_0&gt;0\) such that \(0≤f(m)≤cg(n)\) for all \(n&gt;n_0\)}  \(\Omega\)-notati">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/pic/算法导论笔记/Recursion-tree%20medthod.png">
+<meta property="og:image" content="http://example.com/pic/算法导论笔记/Recurrences.png">
 <meta property="article:published_time" content="2022-01-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-01-19T14:44:23.157Z">
+<meta property="article:modified_time" content="2022-01-20T12:39:07.830Z">
 <meta property="article:author" content="wpc">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/pic/算法导论笔记/Recursion-tree%20medthod.png">
@@ -139,7 +140,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">13</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
@@ -197,10 +198,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-01-19 00:00:00 / Modified: 22:44:23" itemprop="dateCreated datePublished" datetime="2022-01-19T00:00:00+08:00">2022-01-19</time>
+              <time title="Created: 2022-01-19 00:00:00" itemprop="dateCreated datePublished" datetime="2022-01-19T00:00:00+08:00">2022-01-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-01-20 20:39:07" itemprop="dateModified" datetime="2022-01-20T20:39:07+08:00">2022-01-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -245,9 +252,9 @@
       
         <h2 id="recurrences">Recurrences</h2>
 <h3 id="asymptotic-notation">Asymptotic notation</h3>
-<h4 id="omicron-notationupper-bounds"><span class="math inline">\(\Omicron\)</span>-notation(upper bounds)</h4>
+<h4 id="o-notationupper-bounds"><span class="math inline">\(O\)</span>-notation(upper bounds)</h4>
 <blockquote>
-<p><span class="math inline">\(\Omicron(g(n))=\)</span>{<span class="math inline">\(f(n)\)</span>: there exist constants <span class="math inline">\(c&gt;0,n_0&gt;0\)</span> such that <span class="math inline">\(0≤f(m)≤cg(n)\)</span> for all <span class="math inline">\(n&gt;n_0\)</span>}</p>
+<p><span class="math inline">\(O(g(n))=\)</span>{<span class="math inline">\(f(n)\)</span>: there exist constants <span class="math inline">\(c&gt;0,n_0&gt;0\)</span> such that <span class="math inline">\(0≤f(m)≤cg(n)\)</span> for all <span class="math inline">\(n&gt;n_0\)</span>}</p>
 </blockquote>
 <h4 id="omega-notationlower-bounds"><span class="math inline">\(\Omega\)</span>-notation(lower bounds)</h4>
 <blockquote>
@@ -255,7 +262,7 @@
 </blockquote>
 <h4 id="theta-notationtight-bounds"><span class="math inline">\(\Theta\)</span>-notation(tight bounds)</h4>
 <blockquote>
-<p><span class="math inline">\(\Theta(g(n))=\Omega(g(n)) \cap \Omicron(g(n))\)</span></p>
+<p><span class="math inline">\(\Theta(g(n))=\Omega(g(n)) \cap O(g(n))\)</span></p>
 </blockquote>
 <h4 id="omicron-notation"><span class="math inline">\(\omicron\)</span>-notation</h4>
 <blockquote>
@@ -272,8 +279,8 @@
 </blockquote>
 <p><strong><em>EXAMPLE:</em></strong></p>
 <ul>
-<li><span class="math inline">\(f(n)=n^3 +\Omicron(n^2)\)</span> means <span class="math inline">\(f(n)=n^3+h(n)\)</span> for some <span class="math inline">\(h(n)\in \Omicron(n^2)\)</span>.</li>
-<li><span class="math inline">\(n^2 +\Omicron(n)=\Omicron(n^2)\)</span> means <span class="math inline">\(n^2 +f(n)=h(n)\)</span> for any <span class="math inline">\(f(n)\in \Omicron(n)\)</span> for some <span class="math inline">\(h(n)\in \Omicron(n^2)\)</span>.</li>
+<li><span class="math inline">\(f(n)=n^3 +O(n^2)\)</span> means <span class="math inline">\(f(n)=n^3+h(n)\)</span> for some <span class="math inline">\(h(n)\in O(n^2)\)</span>.</li>
+<li><span class="math inline">\(n^2 +O(n)=O(n^2)\)</span> means <span class="math inline">\(n^2 +f(n)=h(n)\)</span> for any <span class="math inline">\(f(n)\in O(n)\)</span> for some <span class="math inline">\(h(n)\in O(n^2)\)</span>.</li>
 </ul>
 <h3 id="solving-recurrences">Solving recurrences</h3>
 <h4 id="substitution-method">Substitution method</h4>
@@ -288,7 +295,7 @@
 <p><strong><em>EXAMPLE:</em></strong> <span class="math inline">\(T(n)=4T(n/2)+n \quad [T(1)=\Theta(1)]\)</span></p>
 <blockquote>
 <ol type="1">
-<li>Guess <span class="math inline">\(\Omicron(n^3)\)</span>.</li>
+<li>Guess <span class="math inline">\(O(n^3)\)</span>.</li>
 <li>Assume that <span class="math inline">\(T(k)\le ck^3\)</span> for all <span class="math inline">\(k&lt;n\)</span>​.</li>
 <li>Prove <span class="math inline">\(T(n)\le cn^3\)</span> by induction.</li>
 </ol>
@@ -301,11 +308,11 @@
 &amp;\qquad=(c/2)n^3+n&amp; \nonumber\\
 &amp;\qquad=cn^3-((c/2)n^3-n)\leftarrow desired-residual&amp; \nonumber\\
 &amp;\qquad\le cn^3\leftarrow desired&amp; \nonumber\\
-&amp;whenever\ (c/2)n^3-n \ge 0, for\ example,if\ c\ge2\ and\ n\ge1
+&amp;whenever\ (c/2)n^3-n \ge 0, for\ example,if\ c\ge2\ and\ n\ge1&amp; \nonumber\\
 \end{flalign}
 \]</span></p>
 </blockquote>
-<h3 id="recursion-tree-method">Recursion-tree method</h3>
+<h4 id="recursion-tree-method">Recursion-tree method</h4>
 <ul>
 <li>The method can be <strong>unreliable</strong> just like any method that uses ellipses(...).</li>
 <li>The method is good for generating guesses for the substitution method.</li>
@@ -313,15 +320,15 @@
 <p><strong><em>EXAMPLE:</em></strong> <span class="math inline">\(T(n)=T(n/4)+T(n/2)+n^2 \quad [T(1)=\Theta(1)]\)</span></p>
 <p><img src="/pic/算法导论笔记/Recursion-tree%20medthod.png" /></p>
 <p><span class="math inline">\(T(n)=\Theta(n^2)\)</span></p>
-<h3 id="the-master-method">The master method</h3>
+<h4 id="the-master-method"><u>The master method</u></h4>
 <p>The master method applies to recurrences of form: <span class="math display">\[
 \begin{align*}
 &amp;T(n)=aT(n/b)+f(n)\\
-where\ a&gt;1, &amp;b&gt;1, and\ f\ is\ asymptotically\ positive
+\text{where }a&gt;1, &amp;b&gt;1, \text{and }f\text{ is asymptotically positive}
 \end{align*}
 \]</span></p>
 <ul>
-<li><p><span class="math inline">\(f(n)=\Omicron(n^{\log_ba-\xi} )\)</span> for some constant <span class="math inline">\(\xi&gt;0\)</span>. <span class="math inline">\(f(n)\)</span> grows polynomially slower than <span class="math inline">\(n^{\log_ba}\)</span>(by an <span class="math inline">\(n^\xi\)</span> factor).</p>
+<li><p><span class="math inline">\(f(n)=O(n^{\log_ba-\xi} )\)</span> for some constant <span class="math inline">\(\xi&gt;0\)</span>. <span class="math inline">\(f(n)\)</span> grows polynomially slower than <span class="math inline">\(n^{\log_ba}\)</span>(by an <span class="math inline">\(n^\xi\)</span> factor).</p>
 <p><strong><em>Solution:</em></strong> <span class="math inline">\(T(n)=\Theta(n^{\log_ba})\)</span>.</p></li>
 <li><p><span class="math inline">\(f(n)=\Theta(n^{\log_bx}\lg^ka )\)</span> for some constant <span class="math inline">\(k\ge0\)</span>. <span class="math inline">\(f(n)\)</span> and <span class="math inline">\(n^{\log_ba}\)</span> grow at similar rates.</p>
 <p><strong><em>Solution:</em></strong> <span class="math inline">\(T(n)=\Theta(n^{\log_ba}\lg^{k+1}n)\)</span>.</p></li>
@@ -330,11 +337,52 @@ where\ a&gt;1, &amp;b&gt;1, and\ f\ is\ asymptotically\ positive
 </ul>
 <p><strong><em>EXAMPLE:</em></strong></p>
 <ol type="1">
-<li><span class="math inline">\(T(n)=4T(n/2)+n\)</span></li>
-<li><span class="math inline">\(T(n)=4T(n/2)+n^2\)</span></li>
-<li><span class="math inline">\(T(n)=4T(n/2)+n^3\)</span></li>
-<li><span class="math inline">\(T(n)=4T(n/2)+n^2/\lg n\)</span></li>
+<li><p><span class="math display">\[
+\begin{align}
+&amp;T(n)=4T(n/2)+n&amp; \nonumber\\
+a=4, &amp;b=2 \Rightarrow  n^{\log_ba}=n^2;f(n)=n&amp; \nonumber\\
+\text{CASE }&amp;1: f(n)=O(n^{2-\xi})\quad for\ \xi=1&amp; \nonumber\\
+\therefore &amp;T(n)=\Theta(n^2)&amp; \nonumber\\
+\end{align}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{align}
+&amp;T(n)=4T(n/2)+n^2&amp; \nonumber\\
+a=4, &amp;b=2 \Rightarrow  n^{\log_ba}=n^2;f(n)=n^2&amp; \nonumber\\
+CASE\ &amp;2: f(n)=\Theta(n^2\lg^0n)\quad  k=0&amp; \nonumber\\
+\therefore &amp;T(n)=\Theta(n^2\lg n)&amp; \nonumber\\
+\end{align}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{align}
+&amp;T(n)=4T(n/2)+n^3&amp; \nonumber\\
+a=4, &amp;b=2 \Rightarrow  n^{\log_ba}=n^2;f(n)=n^3&amp; \nonumber\\
+CASE\ &amp;3: f(n)=\Omega(n^{2-\xi})\quad  for\ \xi=1&amp; \nonumber\\
+and\ 4(n/2)^3&amp;\le cn(reg. cond. )\quad for\ c=1/2&amp; \nonumber\\
+\therefore &amp;T(n)=\Theta(n^3)&amp; \nonumber\\
+\end{align}
+\]</span></p></li>
+<li><p><span class="math display">\[
+\begin{align}
+&amp;T(n)=4T(n/2)+n^2/\lg n&amp; \nonumber\\
+a=4, &amp;b=2 \Rightarrow  n^{\log_ba}=n^2;f(n)=n^2/\lg n&amp; \nonumber\\
+\end{align}
+\]</span> Master method does not apply. In particular, for every constant <span class="math inline">\(\xi&gt;0,\)</span> we have <span class="math inline">\(n^\xi = \omega(\lg n)\)</span>.</p></li>
 </ol>
+<h4 id="idea-of-master-theorem">Idea of master theorem</h4>
+<p><img src="/pic/算法导论笔记/Recurrences.png" /></p>
+<blockquote>
+<p><strong>CASE 1:</strong> The weight increases geometrically from the root to the leaves. The leaves hold a constant fraction of the total weight.</p>
+<p><span class="math inline">\(\therefore T(n)=\Theta(n^{\log_ba})\)</span></p>
+</blockquote>
+<blockquote>
+<p><strong>CASE 2:</strong> <span class="math inline">\((k=0)\)</span>The weight is approximately the same on each of the <span class="math inline">\(log_bn\)</span> levels.</p>
+<p><span class="math inline">\(\therefore T(n)=\Theta(n^{\log_ba}\lg n)\)</span></p>
+</blockquote>
+<blockquote>
+<p><strong>CASE 3:</strong> The weight decreases geometrically from the root to the leaves. The root holds a constant fraction of the total weight.</p>
+<p><span class="math inline">\(\therefore T(n)=\Theta(f(n))\)</span></p>
+</blockquote>
 
     </div>
 
@@ -390,7 +438,10 @@ where\ a&gt;1, &amp;b&gt;1, and\ f\ is\ asymptotically\ positive
     <a href="/2022/01/15/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Introduction/" rel="prev" title="Introduction">
       <i class="fa fa-chevron-left"></i> Introduction
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/01/20/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E7%AC%94%E8%AE%B0/Divide%20and%20Conquer/" rel="next" title="Divide and Conquer">
+      Divide and Conquer <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -450,7 +501,7 @@ where\ a&gt;1, &amp;b&gt;1, and\ f\ is\ asymptotically\ positive
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#recurrences"><span class="nav-text">Recurrences</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#asymptotic-notation"><span class="nav-text">Asymptotic notation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#omicron-notationupper-bounds"><span class="nav-text">\(\Omicron\)-notation(upper bounds)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#omega-notationlower-bounds"><span class="nav-text">\(\Omega\)-notation(lower bounds)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#theta-notationtight-bounds"><span class="nav-text">\(\Theta\)-notation(tight bounds)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#omicron-notation"><span class="nav-text">\(\omicron\)-notation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#omega-notation"><span class="nav-text">\(\omega\)-notation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#macro-substitution"><span class="nav-text">Macro substitution</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solving-recurrences"><span class="nav-text">Solving recurrences</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#substitution-method"><span class="nav-text">Substitution method</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#recursion-tree-method"><span class="nav-text">Recursion-tree method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-master-method"><span class="nav-text">The master method</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#recurrences"><span class="nav-text">Recurrences</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#asymptotic-notation"><span class="nav-text">Asymptotic notation</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#o-notationupper-bounds"><span class="nav-text">\(O\)-notation(upper bounds)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#omega-notationlower-bounds"><span class="nav-text">\(\Omega\)-notation(lower bounds)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#theta-notationtight-bounds"><span class="nav-text">\(\Theta\)-notation(tight bounds)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#omicron-notation"><span class="nav-text">\(\omicron\)-notation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#omega-notation"><span class="nav-text">\(\omega\)-notation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#macro-substitution"><span class="nav-text">Macro substitution</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#solving-recurrences"><span class="nav-text">Solving recurrences</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#substitution-method"><span class="nav-text">Substitution method</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#recursion-tree-method"><span class="nav-text">Recursion-tree method</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#the-master-method"><span class="nav-text">The master method</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#idea-of-master-theorem"><span class="nav-text">Idea of master theorem</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -466,7 +517,7 @@ where\ a&gt;1, &amp;b&gt;1, and\ f\ is\ asymptotically\ positive
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

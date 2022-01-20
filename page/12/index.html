@@ -135,7 +135,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">13</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
@@ -170,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/20/Git%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -184,7 +184,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/10/20/Git%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">Git 基础教程</a>
+            <a href="/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">正则表达式</a>
         </h2>
 
         <div class="post-meta">
@@ -194,14 +194,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-10-20 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-20T00:00:00+08:00">2021-10-20</time>
+              <time title="Created: 2021-10-30 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-30T00:00:00+08:00">2021-10-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-16 13:42:45" itemprop="dateModified" datetime="2022-01-16T13:42:45+08:00">2022-01-16</time>
+                <time title="Modified: 2022-01-16 13:43:57" itemprop="dateModified" datetime="2022-01-16T13:43:57+08:00">2022-01-16</time>
               </span>
 
           
@@ -213,8 +213,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2021/10/20/Git%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/10/20/Git%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -229,20 +229,56 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="初始设置">初始设置</h2>
-<p>前提条件 - 电脑安装了 Git - 拥有一个 GitHub 账号</p>
-<ol type="1">
-<li>设置姓名和邮箱地址 <figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.name</span> <span class="string">&quot;用户名&quot;</span></span><br><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.email</span> <span class="string">&quot;邮箱地址&quot;</span></span><br></pre></td></tr></table></figure> 之后可以在 .gitconfig 文件中看到这些信息</li>
-</ol>
-<p>建议<code>git config --global color.ui auto</code></p>
-<ol start="2" type="1">
-<li><p>配置 SSH key <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;邮箱地址&quot;</span></span><br><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa key pair.</span><br><span class="line">Enter <span class="keyword">file</span> in which to save the key (~<span class="regexp">/.ssh/i</span>d_rsa): 按回车</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): 输入密码</span><br><span class="line">Enter same passphrase again: 再次输入密码</span><br></pre></td></tr></table></figure></p></li>
-<li><p>查看公钥内容 <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cat ~<span class="regexp">/.ssh/i</span>d_rsa.pub</span><br><span class="line">ssh-rsa  公钥内容 邮箱地址</span><br></pre></td></tr></table></figure></p></li>
-<li><p>连接 GitHub 在 GitHub 的 Setting &gt; SSH Keys 将公钥内容（以 ssh-rsa 打头）添加进去</p></li>
-<li><p>测试是否已经连接成功 <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br><span class="line">Enter passphrase <span class="keyword">for</span> key <span class="symbol">&#x27;C</span>:\Users\WANG/.ssh/id_rsa&#x27;: 输入密码</span><br><span class="line">Hi You<span class="symbol">&#x27;ve</span> successfully authenticated, but GitHub does <span class="keyword">not</span> provide shell <span class="keyword">access</span>.</span><br></pre></td></tr></table></figure>
+          <h2 id="表达式">[]表达式</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">表达式</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">[ab]</td>
+<td>a 或者 b</td>
+<td>Java 匹配 J[abc]va</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[^ab]</td>
+<td>除了 a, b 以外的所有字符</td>
+<td>Java 不匹配 J[ ^a]va</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">(ab|cd)</td>
+<td>ab 或者 cd</td>
+<td>Java 匹配 J(av|ac)a</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[a-z]</td>
+<td>a 到 z</td>
+<td>Java 匹配 [A-M]a[a-z]a</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">[^a-z]</td>
+<td>除了 a 到 z 的字符</td>
+<td>Java 匹配 Jav[ ^b-d]</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[a-e[m-p]]</td>
+<td>a 到 e 或 m 到 p</td>
+<td>Java 匹配 [A-G[I-M]]av[a-d]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">[a-e&amp;&amp;[m-p]]</td>
+<td>a 到 e 和 m 到 p</td>
+<td>Java 匹配 [A-P&amp;&amp;[I-M]]av[a-d]</td>
+</tr>
+</tbody>
+</table>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/10/20/Git%20%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/#more" rel="contents">
+              <a class="btn" href="/2021/10/30/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -265,7 +301,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+    <a class="extend prev" rel="prev" href="/page/11/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/13/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -333,7 +369,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

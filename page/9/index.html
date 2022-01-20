@@ -135,7 +135,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">12</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">13</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
@@ -170,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/06/Docker%20%E6%95%99%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -184,7 +184,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/11/06/Docker%20%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">Docker 教程</a>
+            <a href="/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">JavaFx 教程</a>
         </h2>
 
         <div class="post-meta">
@@ -194,14 +194,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2021-11-06T00:00:00+08:00">2021-11-06</time>
+              <time title="Created: 2021-11-20 00:00:00" itemprop="dateCreated datePublished" datetime="2021-11-20T00:00:00+08:00">2021-11-20</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-16 13:42:39" itemprop="dateModified" datetime="2022-01-16T13:42:39+08:00">2022-01-16</time>
+                <time title="Modified: 2022-01-16 13:42:57" itemprop="dateModified" datetime="2022-01-16T13:42:57+08:00">2022-01-16</time>
               </span>
 
           
@@ -213,8 +213,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2021/11/06/Docker%20%E6%95%99%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/11/06/Docker%20%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -229,18 +229,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="安装">安装</h2>
-<p>环境：Ubuntu20.04</p>
-<ul>
-<li><p>安装包，允许 apt 命令 HTTPS 访问 Docker 源 <figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> apt install apt-trans<span class="keyword">port</span>-https ca-certificates curl gnupg-agent software-properties-common</span><br></pre></td></tr></table></figure></p></li>
-<li><p>添加官方 GPS key <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https:<span class="regexp">//</span>download.docker.com<span class="regexp">/linux/u</span>buntu/gpg | sudo apt-key add -</span><br></pre></td></tr></table></figure></p></li>
-<li><p>将 Docker 源添加到 /etc/apt/sources.list <figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="built_in"> add-apt-repository </span><span class="string">&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;</span></span><br></pre></td></tr></table></figure></p></li>
-<li><p>安装 Docker <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo apt update</span> </span><br></pre></td></tr></table></figure></p></li>
-</ul>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt <span class="keyword">install</span> docker-ce</span><br></pre></td></tr></table></figure>
+          <h2 id="开始">开始</h2>
+<ol type="1">
+<li>编译命令</li>
+</ol>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac <span class="params">--module-path</span> lib文件路径 <span class="params">--add-modules</span> javafx.controls 文件名<span class="string">.java</span></span><br></pre></td></tr></table></figure>
+<ol start="2" type="1">
+<li>运行命令</li>
+</ol>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">java </span>--module-path lib文件路径 --<span class="keyword">add-modules </span><span class="keyword">javafx.controls </span>文件名</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/11/06/Docker%20%E6%95%99%E7%A8%8B/#more" rel="contents">
+              <a class="btn" href="/2021/11/20/JavaFx%20%E6%95%99%E7%A8%8B/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -263,7 +263,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -331,7 +331,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
